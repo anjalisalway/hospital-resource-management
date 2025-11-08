@@ -21,6 +21,7 @@ A **Streamlit-based application** to manage hospital resources, generate recomme
 5. **Chat-Based Decision Support**: Users can query the system, and the agent returns structured, stepwise responses with numbers and actionable insights.  
 
 ### Tech Stack
+- **Frontend**: Streamlit
 - **Large Language Model**: Groq LLaMA 3.3  
 - **Vector Database**: FAISS  
 - **Embeddings**: HuggingFace `all-MiniLM-L6-v2`  
