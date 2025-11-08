@@ -32,8 +32,8 @@ A **Streamlit-based application** to manage hospital resources, generate recomme
 
 1. **Clone the repository**:  
 ```bash
-git clone <repo-url>
-cd <repo-folder>
+git clone https://github.com/anjalisalway/hospital-resource-management.git
+cd hospital-resource-management
 ```
 
 2. **Install dependencies**:  
