@@ -1,0 +1,13 @@
+streamlit
+langgraph
+langchain-community
+langchain-core
+pydantic
+langchain-groq
+langchain-chroma
+crewai
+python-dotenv
+langchain-huggingface
+faiss-cpu
+scikit-learn
+litellm

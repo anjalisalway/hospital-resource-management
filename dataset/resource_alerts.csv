@@ -1,0 +1,12 @@
+hospital_id,hospital_name,alert_type,resource_name,severity,alert_message,alert_timestamp,is_resolved
+HOSP_007,Northern Regional Hospital,Equipment Shortage,Surgical Tables,Medium,Low availability of Surgical Tables,2025-11-08T18:40:18.125282,No
+HOSP_008,Sunset Valley Hospital,Equipment Shortage,Defibrillators,High,Low availability of Defibrillators,2025-11-08T18:40:18.125376,No
+HOSP_008,Sunset Valley Hospital,Staff Shortage,Surgical Nurse,High,Urgent need for Surgical Nurse,2025-11-08T18:40:18.125378,No
+HOSP_010,Eastside General Hospital,Equipment Shortage,MRI Machines,High,Low availability of MRI Machines,2025-11-08T18:40:18.125531,No
+HOSP_012,Highland Medical Institute,Equipment Shortage,Ventilators,High,Low availability of Ventilators,2025-11-08T18:40:18.125683,No
+HOSP_012,Highland Medical Institute,Staff Shortage,Neurologist,High,Urgent need for Neurologist,2025-11-08T18:40:18.125684,No
+HOSP_015,Greenfield Medical Center,Staff Shortage,General Nurse,High,Urgent need for General Nurse,2025-11-08T18:40:18.125915,No
+HOSP_016,Harborview Hospital,Equipment Shortage,Nebulizers,High,Low availability of Nebulizers,2025-11-08T18:40:18.125988,No
+HOSP_018,Bay Area Hospital,Equipment Shortage,Nebulizers,Medium,Low availability of Nebulizers,2025-11-08T18:40:18.126133,No
+HOSP_018,Bay Area Hospital,Staff Shortage,Radiologist,High,Urgent need for Radiologist,2025-11-08T18:40:18.126134,No
+HOSP_019,Valley View Medical Center,Equipment Shortage,X-Ray Machines,Medium,Low availability of X-Ray Machines,2025-11-08T18:40:18.126205,No

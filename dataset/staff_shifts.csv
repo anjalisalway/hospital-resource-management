@@ -1,0 +1,1081 @@
+hospital_id,hospital_name,staff_role,shift_name,shift_start_time,shift_end_time,staff_count,total_staff_in_role
+HOSP_001,City General Hospital,Emergency Physician,Morning,06:00,14:00,0,1
+HOSP_001,City General Hospital,Emergency Physician,Evening,14:00,22:00,0,1
+HOSP_001,City General Hospital,Emergency Physician,Night,22:00,06:00,0,1
+HOSP_001,City General Hospital,Surgeon,Morning,06:00,14:00,1,4
+HOSP_001,City General Hospital,Surgeon,Evening,14:00,22:00,1,4
+HOSP_001,City General Hospital,Surgeon,Night,22:00,06:00,1,4
+HOSP_001,City General Hospital,Anesthesiologist,Morning,06:00,14:00,0,1
+HOSP_001,City General Hospital,Anesthesiologist,Evening,14:00,22:00,0,1
+HOSP_001,City General Hospital,Anesthesiologist,Night,22:00,06:00,0,1
+HOSP_001,City General Hospital,Radiologist,Morning,06:00,14:00,0,2
+HOSP_001,City General Hospital,Radiologist,Evening,14:00,22:00,0,2
+HOSP_001,City General Hospital,Radiologist,Night,22:00,06:00,0,2
+HOSP_001,City General Hospital,Cardiologist,Morning,06:00,14:00,0,1
+HOSP_001,City General Hospital,Cardiologist,Evening,14:00,22:00,0,1
+HOSP_001,City General Hospital,Cardiologist,Night,22:00,06:00,0,1
+HOSP_001,City General Hospital,Neurologist,Morning,06:00,14:00,0,1
+HOSP_001,City General Hospital,Neurologist,Evening,14:00,22:00,0,1
+HOSP_001,City General Hospital,Neurologist,Night,22:00,06:00,0,1
+HOSP_001,City General Hospital,Pediatrician,Morning,06:00,14:00,1,3
+HOSP_001,City General Hospital,Pediatrician,Evening,14:00,22:00,0,3
+HOSP_001,City General Hospital,Pediatrician,Night,22:00,06:00,1,3
+HOSP_001,City General Hospital,General Practitioner,Morning,06:00,14:00,0,2
+HOSP_001,City General Hospital,General Practitioner,Evening,14:00,22:00,0,2
+HOSP_001,City General Hospital,General Practitioner,Night,22:00,06:00,0,2
+HOSP_001,City General Hospital,ICU Nurse,Morning,06:00,14:00,2,9
+HOSP_001,City General Hospital,ICU Nurse,Evening,14:00,22:00,2,9
+HOSP_001,City General Hospital,ICU Nurse,Night,22:00,06:00,2,9
+HOSP_001,City General Hospital,Emergency Nurse,Morning,06:00,14:00,2,9
+HOSP_001,City General Hospital,Emergency Nurse,Evening,14:00,22:00,3,9
+HOSP_001,City General Hospital,Emergency Nurse,Night,22:00,06:00,3,9
+HOSP_001,City General Hospital,Surgical Nurse,Morning,06:00,14:00,7,22
+HOSP_001,City General Hospital,Surgical Nurse,Evening,14:00,22:00,8,22
+HOSP_001,City General Hospital,Surgical Nurse,Night,22:00,06:00,6,22
+HOSP_001,City General Hospital,General Nurse,Morning,06:00,14:00,4,12
+HOSP_001,City General Hospital,General Nurse,Evening,14:00,22:00,3,12
+HOSP_001,City General Hospital,General Nurse,Night,22:00,06:00,3,12
+HOSP_001,City General Hospital,Lab Technician,Morning,06:00,14:00,2,6
+HOSP_001,City General Hospital,Lab Technician,Evening,14:00,22:00,2,6
+HOSP_001,City General Hospital,Lab Technician,Night,22:00,06:00,1,6
+HOSP_001,City General Hospital,Radiologic Technologist,Morning,06:00,14:00,1,4
+HOSP_001,City General Hospital,Radiologic Technologist,Evening,14:00,22:00,1,4
+HOSP_001,City General Hospital,Radiologic Technologist,Night,22:00,06:00,1,4
+HOSP_001,City General Hospital,Pharmacist,Morning,06:00,14:00,0,3
+HOSP_001,City General Hospital,Pharmacist,Evening,14:00,22:00,0,3
+HOSP_001,City General Hospital,Pharmacist,Night,22:00,06:00,1,3
+HOSP_001,City General Hospital,Respiratory Therapist,Morning,06:00,14:00,1,3
+HOSP_001,City General Hospital,Respiratory Therapist,Evening,14:00,22:00,0,3
+HOSP_001,City General Hospital,Respiratory Therapist,Night,22:00,06:00,0,3
+HOSP_001,City General Hospital,Physical Therapist,Morning,06:00,14:00,0,2
+HOSP_001,City General Hospital,Physical Therapist,Evening,14:00,22:00,0,2
+HOSP_001,City General Hospital,Physical Therapist,Night,22:00,06:00,0,2
+HOSP_001,City General Hospital,Administrative Staff,Morning,06:00,14:00,1,6
+HOSP_001,City General Hospital,Administrative Staff,Evening,14:00,22:00,1,6
+HOSP_001,City General Hospital,Administrative Staff,Night,22:00,06:00,1,6
+HOSP_002,St. Mary's Medical Center,Emergency Physician,Morning,06:00,14:00,0,3
+HOSP_002,St. Mary's Medical Center,Emergency Physician,Evening,14:00,22:00,0,3
+HOSP_002,St. Mary's Medical Center,Emergency Physician,Night,22:00,06:00,1,3
+HOSP_002,St. Mary's Medical Center,Surgeon,Morning,06:00,14:00,1,5
+HOSP_002,St. Mary's Medical Center,Surgeon,Evening,14:00,22:00,2,5
+HOSP_002,St. Mary's Medical Center,Surgeon,Night,22:00,06:00,2,5
+HOSP_002,St. Mary's Medical Center,Anesthesiologist,Morning,06:00,14:00,1,6
+HOSP_002,St. Mary's Medical Center,Anesthesiologist,Evening,14:00,22:00,1,6
+HOSP_002,St. Mary's Medical Center,Anesthesiologist,Night,22:00,06:00,2,6
+HOSP_002,St. Mary's Medical Center,Radiologist,Morning,06:00,14:00,1,6
+HOSP_002,St. Mary's Medical Center,Radiologist,Evening,14:00,22:00,2,6
+HOSP_002,St. Mary's Medical Center,Radiologist,Night,22:00,06:00,2,6
+HOSP_002,St. Mary's Medical Center,Cardiologist,Morning,06:00,14:00,2,7
+HOSP_002,St. Mary's Medical Center,Cardiologist,Evening,14:00,22:00,1,7
+HOSP_002,St. Mary's Medical Center,Cardiologist,Night,22:00,06:00,1,7
+HOSP_002,St. Mary's Medical Center,Neurologist,Morning,06:00,14:00,1,4
+HOSP_002,St. Mary's Medical Center,Neurologist,Evening,14:00,22:00,1,4
+HOSP_002,St. Mary's Medical Center,Neurologist,Night,22:00,06:00,1,4
+HOSP_002,St. Mary's Medical Center,Pediatrician,Morning,06:00,14:00,2,8
+HOSP_002,St. Mary's Medical Center,Pediatrician,Evening,14:00,22:00,3,8
+HOSP_002,St. Mary's Medical Center,Pediatrician,Night,22:00,06:00,2,8
+HOSP_002,St. Mary's Medical Center,General Practitioner,Morning,06:00,14:00,3,10
+HOSP_002,St. Mary's Medical Center,General Practitioner,Evening,14:00,22:00,3,10
+HOSP_002,St. Mary's Medical Center,General Practitioner,Night,22:00,06:00,2,10
+HOSP_002,St. Mary's Medical Center,ICU Nurse,Morning,06:00,14:00,6,25
+HOSP_002,St. Mary's Medical Center,ICU Nurse,Evening,14:00,22:00,7,25
+HOSP_002,St. Mary's Medical Center,ICU Nurse,Night,22:00,06:00,8,25
+HOSP_002,St. Mary's Medical Center,Emergency Nurse,Morning,06:00,14:00,9,24
+HOSP_002,St. Mary's Medical Center,Emergency Nurse,Evening,14:00,22:00,8,24
+HOSP_002,St. Mary's Medical Center,Emergency Nurse,Night,22:00,06:00,9,24
+HOSP_002,St. Mary's Medical Center,Surgical Nurse,Morning,06:00,14:00,7,27
+HOSP_002,St. Mary's Medical Center,Surgical Nurse,Evening,14:00,22:00,7,27
+HOSP_002,St. Mary's Medical Center,Surgical Nurse,Night,22:00,06:00,8,27
+HOSP_002,St. Mary's Medical Center,General Nurse,Morning,06:00,14:00,9,24
+HOSP_002,St. Mary's Medical Center,General Nurse,Evening,14:00,22:00,6,24
+HOSP_002,St. Mary's Medical Center,General Nurse,Night,22:00,06:00,9,24
+HOSP_002,St. Mary's Medical Center,Lab Technician,Morning,06:00,14:00,2,7
+HOSP_002,St. Mary's Medical Center,Lab Technician,Evening,14:00,22:00,2,7
+HOSP_002,St. Mary's Medical Center,Lab Technician,Night,22:00,06:00,1,7
+HOSP_002,St. Mary's Medical Center,Radiologic Technologist,Morning,06:00,14:00,1,7
+HOSP_002,St. Mary's Medical Center,Radiologic Technologist,Evening,14:00,22:00,2,7
+HOSP_002,St. Mary's Medical Center,Radiologic Technologist,Night,22:00,06:00,1,7
+HOSP_002,St. Mary's Medical Center,Pharmacist,Morning,06:00,14:00,4,12
+HOSP_002,St. Mary's Medical Center,Pharmacist,Evening,14:00,22:00,3,12
+HOSP_002,St. Mary's Medical Center,Pharmacist,Night,22:00,06:00,4,12
+HOSP_002,St. Mary's Medical Center,Respiratory Therapist,Morning,06:00,14:00,3,11
+HOSP_002,St. Mary's Medical Center,Respiratory Therapist,Evening,14:00,22:00,4,11
+HOSP_002,St. Mary's Medical Center,Respiratory Therapist,Night,22:00,06:00,3,11
+HOSP_002,St. Mary's Medical Center,Physical Therapist,Morning,06:00,14:00,3,9
+HOSP_002,St. Mary's Medical Center,Physical Therapist,Evening,14:00,22:00,2,9
+HOSP_002,St. Mary's Medical Center,Physical Therapist,Night,22:00,06:00,2,9
+HOSP_002,St. Mary's Medical Center,Administrative Staff,Morning,06:00,14:00,3,12
+HOSP_002,St. Mary's Medical Center,Administrative Staff,Evening,14:00,22:00,3,12
+HOSP_002,St. Mary's Medical Center,Administrative Staff,Night,22:00,06:00,4,12
+HOSP_003,Riverside Community Hospital,Emergency Physician,Morning,06:00,14:00,4,10
+HOSP_003,Riverside Community Hospital,Emergency Physician,Evening,14:00,22:00,2,10
+HOSP_003,Riverside Community Hospital,Emergency Physician,Night,22:00,06:00,3,10
+HOSP_003,Riverside Community Hospital,Surgeon,Morning,06:00,14:00,1,4
+HOSP_003,Riverside Community Hospital,Surgeon,Evening,14:00,22:00,1,4
+HOSP_003,Riverside Community Hospital,Surgeon,Night,22:00,06:00,1,4
+HOSP_003,Riverside Community Hospital,Anesthesiologist,Morning,06:00,14:00,2,6
+HOSP_003,Riverside Community Hospital,Anesthesiologist,Evening,14:00,22:00,1,6
+HOSP_003,Riverside Community Hospital,Anesthesiologist,Night,22:00,06:00,2,6
+HOSP_003,Riverside Community Hospital,Radiologist,Morning,06:00,14:00,2,6
+HOSP_003,Riverside Community Hospital,Radiologist,Evening,14:00,22:00,2,6
+HOSP_003,Riverside Community Hospital,Radiologist,Night,22:00,06:00,2,6
+HOSP_003,Riverside Community Hospital,Cardiologist,Morning,06:00,14:00,1,4
+HOSP_003,Riverside Community Hospital,Cardiologist,Evening,14:00,22:00,1,4
+HOSP_003,Riverside Community Hospital,Cardiologist,Night,22:00,06:00,1,4
+HOSP_003,Riverside Community Hospital,Neurologist,Morning,06:00,14:00,3,12
+HOSP_003,Riverside Community Hospital,Neurologist,Evening,14:00,22:00,3,12
+HOSP_003,Riverside Community Hospital,Neurologist,Night,22:00,06:00,4,12
+HOSP_003,Riverside Community Hospital,Pediatrician,Morning,06:00,14:00,6,18
+HOSP_003,Riverside Community Hospital,Pediatrician,Evening,14:00,22:00,7,18
+HOSP_003,Riverside Community Hospital,Pediatrician,Night,22:00,06:00,4,18
+HOSP_003,Riverside Community Hospital,General Practitioner,Morning,06:00,14:00,3,9
+HOSP_003,Riverside Community Hospital,General Practitioner,Evening,14:00,22:00,2,9
+HOSP_003,Riverside Community Hospital,General Practitioner,Night,22:00,06:00,3,9
+HOSP_003,Riverside Community Hospital,ICU Nurse,Morning,06:00,14:00,14,46
+HOSP_003,Riverside Community Hospital,ICU Nurse,Evening,14:00,22:00,12,46
+HOSP_003,Riverside Community Hospital,ICU Nurse,Night,22:00,06:00,17,46
+HOSP_003,Riverside Community Hospital,Emergency Nurse,Morning,06:00,14:00,12,46
+HOSP_003,Riverside Community Hospital,Emergency Nurse,Evening,14:00,22:00,12,46
+HOSP_003,Riverside Community Hospital,Emergency Nurse,Night,22:00,06:00,12,46
+HOSP_003,Riverside Community Hospital,Surgical Nurse,Morning,06:00,14:00,5,22
+HOSP_003,Riverside Community Hospital,Surgical Nurse,Evening,14:00,22:00,5,22
+HOSP_003,Riverside Community Hospital,Surgical Nurse,Night,22:00,06:00,7,22
+HOSP_003,Riverside Community Hospital,General Nurse,Morning,06:00,14:00,16,49
+HOSP_003,Riverside Community Hospital,General Nurse,Evening,14:00,22:00,17,49
+HOSP_003,Riverside Community Hospital,General Nurse,Night,22:00,06:00,15,49
+HOSP_003,Riverside Community Hospital,Lab Technician,Morning,06:00,14:00,4,12
+HOSP_003,Riverside Community Hospital,Lab Technician,Evening,14:00,22:00,4,12
+HOSP_003,Riverside Community Hospital,Lab Technician,Night,22:00,06:00,3,12
+HOSP_003,Riverside Community Hospital,Radiologic Technologist,Morning,06:00,14:00,1,4
+HOSP_003,Riverside Community Hospital,Radiologic Technologist,Evening,14:00,22:00,1,4
+HOSP_003,Riverside Community Hospital,Radiologic Technologist,Night,22:00,06:00,1,4
+HOSP_003,Riverside Community Hospital,Pharmacist,Morning,06:00,14:00,5,16
+HOSP_003,Riverside Community Hospital,Pharmacist,Evening,14:00,22:00,6,16
+HOSP_003,Riverside Community Hospital,Pharmacist,Night,22:00,06:00,5,16
+HOSP_003,Riverside Community Hospital,Respiratory Therapist,Morning,06:00,14:00,1,7
+HOSP_003,Riverside Community Hospital,Respiratory Therapist,Evening,14:00,22:00,2,7
+HOSP_003,Riverside Community Hospital,Respiratory Therapist,Night,22:00,06:00,2,7
+HOSP_003,Riverside Community Hospital,Physical Therapist,Morning,06:00,14:00,3,9
+HOSP_003,Riverside Community Hospital,Physical Therapist,Evening,14:00,22:00,2,9
+HOSP_003,Riverside Community Hospital,Physical Therapist,Night,22:00,06:00,2,9
+HOSP_003,Riverside Community Hospital,Administrative Staff,Morning,06:00,14:00,2,10
+HOSP_003,Riverside Community Hospital,Administrative Staff,Evening,14:00,22:00,2,10
+HOSP_003,Riverside Community Hospital,Administrative Staff,Night,22:00,06:00,2,10
+HOSP_004,Memorial Healthcare Center,Emergency Physician,Morning,06:00,14:00,3,12
+HOSP_004,Memorial Healthcare Center,Emergency Physician,Evening,14:00,22:00,3,12
+HOSP_004,Memorial Healthcare Center,Emergency Physician,Night,22:00,06:00,3,12
+HOSP_004,Memorial Healthcare Center,Surgeon,Morning,06:00,14:00,2,7
+HOSP_004,Memorial Healthcare Center,Surgeon,Evening,14:00,22:00,2,7
+HOSP_004,Memorial Healthcare Center,Surgeon,Night,22:00,06:00,1,7
+HOSP_004,Memorial Healthcare Center,Anesthesiologist,Morning,06:00,14:00,3,9
+HOSP_004,Memorial Healthcare Center,Anesthesiologist,Evening,14:00,22:00,3,9
+HOSP_004,Memorial Healthcare Center,Anesthesiologist,Night,22:00,06:00,3,9
+HOSP_004,Memorial Healthcare Center,Radiologist,Morning,06:00,14:00,2,10
+HOSP_004,Memorial Healthcare Center,Radiologist,Evening,14:00,22:00,2,10
+HOSP_004,Memorial Healthcare Center,Radiologist,Night,22:00,06:00,3,10
+HOSP_004,Memorial Healthcare Center,Cardiologist,Morning,06:00,14:00,1,6
+HOSP_004,Memorial Healthcare Center,Cardiologist,Evening,14:00,22:00,2,6
+HOSP_004,Memorial Healthcare Center,Cardiologist,Night,22:00,06:00,2,6
+HOSP_004,Memorial Healthcare Center,Neurologist,Morning,06:00,14:00,3,9
+HOSP_004,Memorial Healthcare Center,Neurologist,Evening,14:00,22:00,3,9
+HOSP_004,Memorial Healthcare Center,Neurologist,Night,22:00,06:00,2,9
+HOSP_004,Memorial Healthcare Center,Pediatrician,Morning,06:00,14:00,4,16
+HOSP_004,Memorial Healthcare Center,Pediatrician,Evening,14:00,22:00,4,16
+HOSP_004,Memorial Healthcare Center,Pediatrician,Night,22:00,06:00,6,16
+HOSP_004,Memorial Healthcare Center,General Practitioner,Morning,06:00,14:00,4,15
+HOSP_004,Memorial Healthcare Center,General Practitioner,Evening,14:00,22:00,4,15
+HOSP_004,Memorial Healthcare Center,General Practitioner,Night,22:00,06:00,3,15
+HOSP_004,Memorial Healthcare Center,ICU Nurse,Morning,06:00,14:00,19,49
+HOSP_004,Memorial Healthcare Center,ICU Nurse,Evening,14:00,22:00,14,49
+HOSP_004,Memorial Healthcare Center,ICU Nurse,Night,22:00,06:00,16,49
+HOSP_004,Memorial Healthcare Center,Emergency Nurse,Morning,06:00,14:00,24,60
+HOSP_004,Memorial Healthcare Center,Emergency Nurse,Evening,14:00,22:00,21,60
+HOSP_004,Memorial Healthcare Center,Emergency Nurse,Night,22:00,06:00,22,60
+HOSP_004,Memorial Healthcare Center,Surgical Nurse,Morning,06:00,14:00,17,49
+HOSP_004,Memorial Healthcare Center,Surgical Nurse,Evening,14:00,22:00,14,49
+HOSP_004,Memorial Healthcare Center,Surgical Nurse,Night,22:00,06:00,12,49
+HOSP_004,Memorial Healthcare Center,General Nurse,Morning,06:00,14:00,11,31
+HOSP_004,Memorial Healthcare Center,General Nurse,Evening,14:00,22:00,9,31
+HOSP_004,Memorial Healthcare Center,General Nurse,Night,22:00,06:00,12,31
+HOSP_004,Memorial Healthcare Center,Lab Technician,Morning,06:00,14:00,4,19
+HOSP_004,Memorial Healthcare Center,Lab Technician,Evening,14:00,22:00,7,19
+HOSP_004,Memorial Healthcare Center,Lab Technician,Night,22:00,06:00,5,19
+HOSP_004,Memorial Healthcare Center,Radiologic Technologist,Morning,06:00,14:00,3,9
+HOSP_004,Memorial Healthcare Center,Radiologic Technologist,Evening,14:00,22:00,3,9
+HOSP_004,Memorial Healthcare Center,Radiologic Technologist,Night,22:00,06:00,2,9
+HOSP_004,Memorial Healthcare Center,Pharmacist,Morning,06:00,14:00,6,16
+HOSP_004,Memorial Healthcare Center,Pharmacist,Evening,14:00,22:00,6,16
+HOSP_004,Memorial Healthcare Center,Pharmacist,Night,22:00,06:00,4,16
+HOSP_004,Memorial Healthcare Center,Respiratory Therapist,Morning,06:00,14:00,4,16
+HOSP_004,Memorial Healthcare Center,Respiratory Therapist,Evening,14:00,22:00,4,16
+HOSP_004,Memorial Healthcare Center,Respiratory Therapist,Night,22:00,06:00,4,16
+HOSP_004,Memorial Healthcare Center,Physical Therapist,Morning,06:00,14:00,7,18
+HOSP_004,Memorial Healthcare Center,Physical Therapist,Evening,14:00,22:00,4,18
+HOSP_004,Memorial Healthcare Center,Physical Therapist,Night,22:00,06:00,7,18
+HOSP_004,Memorial Healthcare Center,Administrative Staff,Morning,06:00,14:00,1,6
+HOSP_004,Memorial Healthcare Center,Administrative Staff,Evening,14:00,22:00,2,6
+HOSP_004,Memorial Healthcare Center,Administrative Staff,Night,22:00,06:00,2,6
+HOSP_005,Metropolitan Hospital,Emergency Physician,Morning,06:00,14:00,2,10
+HOSP_005,Metropolitan Hospital,Emergency Physician,Evening,14:00,22:00,4,10
+HOSP_005,Metropolitan Hospital,Emergency Physician,Night,22:00,06:00,3,10
+HOSP_005,Metropolitan Hospital,Surgeon,Morning,06:00,14:00,4,10
+HOSP_005,Metropolitan Hospital,Surgeon,Evening,14:00,22:00,2,10
+HOSP_005,Metropolitan Hospital,Surgeon,Night,22:00,06:00,3,10
+HOSP_005,Metropolitan Hospital,Anesthesiologist,Morning,06:00,14:00,2,10
+HOSP_005,Metropolitan Hospital,Anesthesiologist,Evening,14:00,22:00,2,10
+HOSP_005,Metropolitan Hospital,Anesthesiologist,Night,22:00,06:00,3,10
+HOSP_005,Metropolitan Hospital,Radiologist,Morning,06:00,14:00,1,7
+HOSP_005,Metropolitan Hospital,Radiologist,Evening,14:00,22:00,2,7
+HOSP_005,Metropolitan Hospital,Radiologist,Night,22:00,06:00,1,7
+HOSP_005,Metropolitan Hospital,Cardiologist,Morning,06:00,14:00,2,7
+HOSP_005,Metropolitan Hospital,Cardiologist,Evening,14:00,22:00,1,7
+HOSP_005,Metropolitan Hospital,Cardiologist,Night,22:00,06:00,1,7
+HOSP_005,Metropolitan Hospital,Neurologist,Morning,06:00,14:00,1,4
+HOSP_005,Metropolitan Hospital,Neurologist,Evening,14:00,22:00,1,4
+HOSP_005,Metropolitan Hospital,Neurologist,Night,22:00,06:00,1,4
+HOSP_005,Metropolitan Hospital,Pediatrician,Morning,06:00,14:00,2,6
+HOSP_005,Metropolitan Hospital,Pediatrician,Evening,14:00,22:00,2,6
+HOSP_005,Metropolitan Hospital,Pediatrician,Night,22:00,06:00,1,6
+HOSP_005,Metropolitan Hospital,General Practitioner,Morning,06:00,14:00,3,13
+HOSP_005,Metropolitan Hospital,General Practitioner,Evening,14:00,22:00,5,13
+HOSP_005,Metropolitan Hospital,General Practitioner,Night,22:00,06:00,4,13
+HOSP_005,Metropolitan Hospital,ICU Nurse,Morning,06:00,14:00,11,28
+HOSP_005,Metropolitan Hospital,ICU Nurse,Evening,14:00,22:00,9,28
+HOSP_005,Metropolitan Hospital,ICU Nurse,Night,22:00,06:00,8,28
+HOSP_005,Metropolitan Hospital,Emergency Nurse,Morning,06:00,14:00,17,51
+HOSP_005,Metropolitan Hospital,Emergency Nurse,Evening,14:00,22:00,18,51
+HOSP_005,Metropolitan Hospital,Emergency Nurse,Night,22:00,06:00,16,51
+HOSP_005,Metropolitan Hospital,Surgical Nurse,Morning,06:00,14:00,16,52
+HOSP_005,Metropolitan Hospital,Surgical Nurse,Evening,14:00,22:00,13,52
+HOSP_005,Metropolitan Hospital,Surgical Nurse,Night,22:00,06:00,17,52
+HOSP_005,Metropolitan Hospital,General Nurse,Morning,06:00,14:00,15,43
+HOSP_005,Metropolitan Hospital,General Nurse,Evening,14:00,22:00,15,43
+HOSP_005,Metropolitan Hospital,General Nurse,Night,22:00,06:00,14,43
+HOSP_005,Metropolitan Hospital,Lab Technician,Morning,06:00,14:00,5,19
+HOSP_005,Metropolitan Hospital,Lab Technician,Evening,14:00,22:00,5,19
+HOSP_005,Metropolitan Hospital,Lab Technician,Night,22:00,06:00,7,19
+HOSP_005,Metropolitan Hospital,Radiologic Technologist,Morning,06:00,14:00,3,12
+HOSP_005,Metropolitan Hospital,Radiologic Technologist,Evening,14:00,22:00,4,12
+HOSP_005,Metropolitan Hospital,Radiologic Technologist,Night,22:00,06:00,4,12
+HOSP_005,Metropolitan Hospital,Pharmacist,Morning,06:00,14:00,2,6
+HOSP_005,Metropolitan Hospital,Pharmacist,Evening,14:00,22:00,1,6
+HOSP_005,Metropolitan Hospital,Pharmacist,Night,22:00,06:00,2,6
+HOSP_005,Metropolitan Hospital,Respiratory Therapist,Morning,06:00,14:00,3,10
+HOSP_005,Metropolitan Hospital,Respiratory Therapist,Evening,14:00,22:00,3,10
+HOSP_005,Metropolitan Hospital,Respiratory Therapist,Night,22:00,06:00,2,10
+HOSP_005,Metropolitan Hospital,Physical Therapist,Morning,06:00,14:00,2,9
+HOSP_005,Metropolitan Hospital,Physical Therapist,Evening,14:00,22:00,2,9
+HOSP_005,Metropolitan Hospital,Physical Therapist,Night,22:00,06:00,2,9
+HOSP_005,Metropolitan Hospital,Administrative Staff,Morning,06:00,14:00,7,18
+HOSP_005,Metropolitan Hospital,Administrative Staff,Evening,14:00,22:00,6,18
+HOSP_005,Metropolitan Hospital,Administrative Staff,Night,22:00,06:00,5,18
+HOSP_006,Lakeside Medical Center,Emergency Physician,Morning,06:00,14:00,1,7
+HOSP_006,Lakeside Medical Center,Emergency Physician,Evening,14:00,22:00,1,7
+HOSP_006,Lakeside Medical Center,Emergency Physician,Night,22:00,06:00,2,7
+HOSP_006,Lakeside Medical Center,Surgeon,Morning,06:00,14:00,0,3
+HOSP_006,Lakeside Medical Center,Surgeon,Evening,14:00,22:00,0,3
+HOSP_006,Lakeside Medical Center,Surgeon,Night,22:00,06:00,1,3
+HOSP_006,Lakeside Medical Center,Anesthesiologist,Morning,06:00,14:00,1,4
+HOSP_006,Lakeside Medical Center,Anesthesiologist,Evening,14:00,22:00,1,4
+HOSP_006,Lakeside Medical Center,Anesthesiologist,Night,22:00,06:00,1,4
+HOSP_006,Lakeside Medical Center,Radiologist,Morning,06:00,14:00,2,7
+HOSP_006,Lakeside Medical Center,Radiologist,Evening,14:00,22:00,2,7
+HOSP_006,Lakeside Medical Center,Radiologist,Night,22:00,06:00,1,7
+HOSP_006,Lakeside Medical Center,Cardiologist,Morning,06:00,14:00,0,3
+HOSP_006,Lakeside Medical Center,Cardiologist,Evening,14:00,22:00,1,3
+HOSP_006,Lakeside Medical Center,Cardiologist,Night,22:00,06:00,1,3
+HOSP_006,Lakeside Medical Center,Neurologist,Morning,06:00,14:00,1,5
+HOSP_006,Lakeside Medical Center,Neurologist,Evening,14:00,22:00,2,5
+HOSP_006,Lakeside Medical Center,Neurologist,Night,22:00,06:00,2,5
+HOSP_006,Lakeside Medical Center,Pediatrician,Morning,06:00,14:00,3,9
+HOSP_006,Lakeside Medical Center,Pediatrician,Evening,14:00,22:00,2,9
+HOSP_006,Lakeside Medical Center,Pediatrician,Night,22:00,06:00,2,9
+HOSP_006,Lakeside Medical Center,General Practitioner,Morning,06:00,14:00,2,7
+HOSP_006,Lakeside Medical Center,General Practitioner,Evening,14:00,22:00,1,7
+HOSP_006,Lakeside Medical Center,General Practitioner,Night,22:00,06:00,2,7
+HOSP_006,Lakeside Medical Center,ICU Nurse,Morning,06:00,14:00,13,34
+HOSP_006,Lakeside Medical Center,ICU Nurse,Evening,14:00,22:00,11,34
+HOSP_006,Lakeside Medical Center,ICU Nurse,Night,22:00,06:00,8,34
+HOSP_006,Lakeside Medical Center,Emergency Nurse,Morning,06:00,14:00,5,15
+HOSP_006,Lakeside Medical Center,Emergency Nurse,Evening,14:00,22:00,5,15
+HOSP_006,Lakeside Medical Center,Emergency Nurse,Night,22:00,06:00,5,15
+HOSP_006,Lakeside Medical Center,Surgical Nurse,Morning,06:00,14:00,9,27
+HOSP_006,Lakeside Medical Center,Surgical Nurse,Evening,14:00,22:00,7,27
+HOSP_006,Lakeside Medical Center,Surgical Nurse,Night,22:00,06:00,8,27
+HOSP_006,Lakeside Medical Center,General Nurse,Morning,06:00,14:00,13,40
+HOSP_006,Lakeside Medical Center,General Nurse,Evening,14:00,22:00,10,40
+HOSP_006,Lakeside Medical Center,General Nurse,Night,22:00,06:00,14,40
+HOSP_006,Lakeside Medical Center,Lab Technician,Morning,06:00,14:00,4,14
+HOSP_006,Lakeside Medical Center,Lab Technician,Evening,14:00,22:00,4,14
+HOSP_006,Lakeside Medical Center,Lab Technician,Night,22:00,06:00,3,14
+HOSP_006,Lakeside Medical Center,Radiologic Technologist,Morning,06:00,14:00,3,8
+HOSP_006,Lakeside Medical Center,Radiologic Technologist,Evening,14:00,22:00,2,8
+HOSP_006,Lakeside Medical Center,Radiologic Technologist,Night,22:00,06:00,3,8
+HOSP_006,Lakeside Medical Center,Pharmacist,Morning,06:00,14:00,2,8
+HOSP_006,Lakeside Medical Center,Pharmacist,Evening,14:00,22:00,2,8
+HOSP_006,Lakeside Medical Center,Pharmacist,Night,22:00,06:00,2,8
+HOSP_006,Lakeside Medical Center,Respiratory Therapist,Morning,06:00,14:00,3,10
+HOSP_006,Lakeside Medical Center,Respiratory Therapist,Evening,14:00,22:00,2,10
+HOSP_006,Lakeside Medical Center,Respiratory Therapist,Night,22:00,06:00,3,10
+HOSP_006,Lakeside Medical Center,Physical Therapist,Morning,06:00,14:00,2,7
+HOSP_006,Lakeside Medical Center,Physical Therapist,Evening,14:00,22:00,1,7
+HOSP_006,Lakeside Medical Center,Physical Therapist,Night,22:00,06:00,1,7
+HOSP_006,Lakeside Medical Center,Administrative Staff,Morning,06:00,14:00,4,10
+HOSP_006,Lakeside Medical Center,Administrative Staff,Evening,14:00,22:00,3,10
+HOSP_006,Lakeside Medical Center,Administrative Staff,Night,22:00,06:00,2,10
+HOSP_007,Northern Regional Hospital,Emergency Physician,Morning,06:00,14:00,1,4
+HOSP_007,Northern Regional Hospital,Emergency Physician,Evening,14:00,22:00,1,4
+HOSP_007,Northern Regional Hospital,Emergency Physician,Night,22:00,06:00,1,4
+HOSP_007,Northern Regional Hospital,Surgeon,Morning,06:00,14:00,0,2
+HOSP_007,Northern Regional Hospital,Surgeon,Evening,14:00,22:00,0,2
+HOSP_007,Northern Regional Hospital,Surgeon,Night,22:00,06:00,0,2
+HOSP_007,Northern Regional Hospital,Anesthesiologist,Morning,06:00,14:00,1,4
+HOSP_007,Northern Regional Hospital,Anesthesiologist,Evening,14:00,22:00,1,4
+HOSP_007,Northern Regional Hospital,Anesthesiologist,Night,22:00,06:00,1,4
+HOSP_007,Northern Regional Hospital,Radiologist,Morning,06:00,14:00,1,4
+HOSP_007,Northern Regional Hospital,Radiologist,Evening,14:00,22:00,1,4
+HOSP_007,Northern Regional Hospital,Radiologist,Night,22:00,06:00,1,4
+HOSP_007,Northern Regional Hospital,Cardiologist,Morning,06:00,14:00,1,3
+HOSP_007,Northern Regional Hospital,Cardiologist,Evening,14:00,22:00,0,3
+HOSP_007,Northern Regional Hospital,Cardiologist,Night,22:00,06:00,0,3
+HOSP_007,Northern Regional Hospital,Neurologist,Morning,06:00,14:00,1,3
+HOSP_007,Northern Regional Hospital,Neurologist,Evening,14:00,22:00,0,3
+HOSP_007,Northern Regional Hospital,Neurologist,Night,22:00,06:00,1,3
+HOSP_007,Northern Regional Hospital,Pediatrician,Morning,06:00,14:00,0,3
+HOSP_007,Northern Regional Hospital,Pediatrician,Evening,14:00,22:00,0,3
+HOSP_007,Northern Regional Hospital,Pediatrician,Night,22:00,06:00,0,3
+HOSP_007,Northern Regional Hospital,General Practitioner,Morning,06:00,14:00,1,7
+HOSP_007,Northern Regional Hospital,General Practitioner,Evening,14:00,22:00,2,7
+HOSP_007,Northern Regional Hospital,General Practitioner,Night,22:00,06:00,1,7
+HOSP_007,Northern Regional Hospital,ICU Nurse,Morning,06:00,14:00,2,10
+HOSP_007,Northern Regional Hospital,ICU Nurse,Evening,14:00,22:00,3,10
+HOSP_007,Northern Regional Hospital,ICU Nurse,Night,22:00,06:00,3,10
+HOSP_007,Northern Regional Hospital,Emergency Nurse,Morning,06:00,14:00,6,22
+HOSP_007,Northern Regional Hospital,Emergency Nurse,Evening,14:00,22:00,5,22
+HOSP_007,Northern Regional Hospital,Emergency Nurse,Night,22:00,06:00,5,22
+HOSP_007,Northern Regional Hospital,Surgical Nurse,Morning,06:00,14:00,6,24
+HOSP_007,Northern Regional Hospital,Surgical Nurse,Evening,14:00,22:00,9,24
+HOSP_007,Northern Regional Hospital,Surgical Nurse,Night,22:00,06:00,9,24
+HOSP_007,Northern Regional Hospital,General Nurse,Morning,06:00,14:00,4,16
+HOSP_007,Northern Regional Hospital,General Nurse,Evening,14:00,22:00,5,16
+HOSP_007,Northern Regional Hospital,General Nurse,Night,22:00,06:00,4,16
+HOSP_007,Northern Regional Hospital,Lab Technician,Morning,06:00,14:00,1,7
+HOSP_007,Northern Regional Hospital,Lab Technician,Evening,14:00,22:00,2,7
+HOSP_007,Northern Regional Hospital,Lab Technician,Night,22:00,06:00,2,7
+HOSP_007,Northern Regional Hospital,Radiologic Technologist,Morning,06:00,14:00,1,3
+HOSP_007,Northern Regional Hospital,Radiologic Technologist,Evening,14:00,22:00,1,3
+HOSP_007,Northern Regional Hospital,Radiologic Technologist,Night,22:00,06:00,0,3
+HOSP_007,Northern Regional Hospital,Pharmacist,Morning,06:00,14:00,1,3
+HOSP_007,Northern Regional Hospital,Pharmacist,Evening,14:00,22:00,1,3
+HOSP_007,Northern Regional Hospital,Pharmacist,Night,22:00,06:00,1,3
+HOSP_007,Northern Regional Hospital,Respiratory Therapist,Morning,06:00,14:00,1,4
+HOSP_007,Northern Regional Hospital,Respiratory Therapist,Evening,14:00,22:00,1,4
+HOSP_007,Northern Regional Hospital,Respiratory Therapist,Night,22:00,06:00,1,4
+HOSP_007,Northern Regional Hospital,Physical Therapist,Morning,06:00,14:00,1,4
+HOSP_007,Northern Regional Hospital,Physical Therapist,Evening,14:00,22:00,1,4
+HOSP_007,Northern Regional Hospital,Physical Therapist,Night,22:00,06:00,1,4
+HOSP_007,Northern Regional Hospital,Administrative Staff,Morning,06:00,14:00,2,5
+HOSP_007,Northern Regional Hospital,Administrative Staff,Evening,14:00,22:00,2,5
+HOSP_007,Northern Regional Hospital,Administrative Staff,Night,22:00,06:00,1,5
+HOSP_008,Sunset Valley Hospital,Emergency Physician,Morning,06:00,14:00,3,8
+HOSP_008,Sunset Valley Hospital,Emergency Physician,Evening,14:00,22:00,3,8
+HOSP_008,Sunset Valley Hospital,Emergency Physician,Night,22:00,06:00,2,8
+HOSP_008,Sunset Valley Hospital,Surgeon,Morning,06:00,14:00,1,7
+HOSP_008,Sunset Valley Hospital,Surgeon,Evening,14:00,22:00,1,7
+HOSP_008,Sunset Valley Hospital,Surgeon,Night,22:00,06:00,1,7
+HOSP_008,Sunset Valley Hospital,Anesthesiologist,Morning,06:00,14:00,1,4
+HOSP_008,Sunset Valley Hospital,Anesthesiologist,Evening,14:00,22:00,1,4
+HOSP_008,Sunset Valley Hospital,Anesthesiologist,Night,22:00,06:00,1,4
+HOSP_008,Sunset Valley Hospital,Radiologist,Morning,06:00,14:00,2,6
+HOSP_008,Sunset Valley Hospital,Radiologist,Evening,14:00,22:00,2,6
+HOSP_008,Sunset Valley Hospital,Radiologist,Night,22:00,06:00,2,6
+HOSP_008,Sunset Valley Hospital,Cardiologist,Morning,06:00,14:00,2,6
+HOSP_008,Sunset Valley Hospital,Cardiologist,Evening,14:00,22:00,2,6
+HOSP_008,Sunset Valley Hospital,Cardiologist,Night,22:00,06:00,2,6
+HOSP_008,Sunset Valley Hospital,Neurologist,Morning,06:00,14:00,1,4
+HOSP_008,Sunset Valley Hospital,Neurologist,Evening,14:00,22:00,1,4
+HOSP_008,Sunset Valley Hospital,Neurologist,Night,22:00,06:00,1,4
+HOSP_008,Sunset Valley Hospital,Pediatrician,Morning,06:00,14:00,3,11
+HOSP_008,Sunset Valley Hospital,Pediatrician,Evening,14:00,22:00,4,11
+HOSP_008,Sunset Valley Hospital,Pediatrician,Night,22:00,06:00,3,11
+HOSP_008,Sunset Valley Hospital,General Practitioner,Morning,06:00,14:00,3,11
+HOSP_008,Sunset Valley Hospital,General Practitioner,Evening,14:00,22:00,2,11
+HOSP_008,Sunset Valley Hospital,General Practitioner,Night,22:00,06:00,3,11
+HOSP_008,Sunset Valley Hospital,ICU Nurse,Morning,06:00,14:00,11,35
+HOSP_008,Sunset Valley Hospital,ICU Nurse,Evening,14:00,22:00,13,35
+HOSP_008,Sunset Valley Hospital,ICU Nurse,Night,22:00,06:00,11,35
+HOSP_008,Sunset Valley Hospital,Emergency Nurse,Morning,06:00,14:00,12,37
+HOSP_008,Sunset Valley Hospital,Emergency Nurse,Evening,14:00,22:00,12,37
+HOSP_008,Sunset Valley Hospital,Emergency Nurse,Night,22:00,06:00,13,37
+HOSP_008,Sunset Valley Hospital,Surgical Nurse,Morning,06:00,14:00,8,20
+HOSP_008,Sunset Valley Hospital,Surgical Nurse,Evening,14:00,22:00,8,20
+HOSP_008,Sunset Valley Hospital,Surgical Nurse,Night,22:00,06:00,7,20
+HOSP_008,Sunset Valley Hospital,General Nurse,Morning,06:00,14:00,13,40
+HOSP_008,Sunset Valley Hospital,General Nurse,Evening,14:00,22:00,14,40
+HOSP_008,Sunset Valley Hospital,General Nurse,Night,22:00,06:00,11,40
+HOSP_008,Sunset Valley Hospital,Lab Technician,Morning,06:00,14:00,1,7
+HOSP_008,Sunset Valley Hospital,Lab Technician,Evening,14:00,22:00,1,7
+HOSP_008,Sunset Valley Hospital,Lab Technician,Night,22:00,06:00,2,7
+HOSP_008,Sunset Valley Hospital,Radiologic Technologist,Morning,06:00,14:00,2,8
+HOSP_008,Sunset Valley Hospital,Radiologic Technologist,Evening,14:00,22:00,2,8
+HOSP_008,Sunset Valley Hospital,Radiologic Technologist,Night,22:00,06:00,3,8
+HOSP_008,Sunset Valley Hospital,Pharmacist,Morning,06:00,14:00,1,6
+HOSP_008,Sunset Valley Hospital,Pharmacist,Evening,14:00,22:00,2,6
+HOSP_008,Sunset Valley Hospital,Pharmacist,Night,22:00,06:00,2,6
+HOSP_008,Sunset Valley Hospital,Respiratory Therapist,Morning,06:00,14:00,2,9
+HOSP_008,Sunset Valley Hospital,Respiratory Therapist,Evening,14:00,22:00,3,9
+HOSP_008,Sunset Valley Hospital,Respiratory Therapist,Night,22:00,06:00,3,9
+HOSP_008,Sunset Valley Hospital,Physical Therapist,Morning,06:00,14:00,3,8
+HOSP_008,Sunset Valley Hospital,Physical Therapist,Evening,14:00,22:00,2,8
+HOSP_008,Sunset Valley Hospital,Physical Therapist,Night,22:00,06:00,2,8
+HOSP_008,Sunset Valley Hospital,Administrative Staff,Morning,06:00,14:00,2,10
+HOSP_008,Sunset Valley Hospital,Administrative Staff,Evening,14:00,22:00,4,10
+HOSP_008,Sunset Valley Hospital,Administrative Staff,Night,22:00,06:00,3,10
+HOSP_009,Parkview Medical Complex,Emergency Physician,Morning,06:00,14:00,3,12
+HOSP_009,Parkview Medical Complex,Emergency Physician,Evening,14:00,22:00,3,12
+HOSP_009,Parkview Medical Complex,Emergency Physician,Night,22:00,06:00,3,12
+HOSP_009,Parkview Medical Complex,Surgeon,Morning,06:00,14:00,1,4
+HOSP_009,Parkview Medical Complex,Surgeon,Evening,14:00,22:00,1,4
+HOSP_009,Parkview Medical Complex,Surgeon,Night,22:00,06:00,1,4
+HOSP_009,Parkview Medical Complex,Anesthesiologist,Morning,06:00,14:00,1,4
+HOSP_009,Parkview Medical Complex,Anesthesiologist,Evening,14:00,22:00,1,4
+HOSP_009,Parkview Medical Complex,Anesthesiologist,Night,22:00,06:00,1,4
+HOSP_009,Parkview Medical Complex,Radiologist,Morning,06:00,14:00,4,10
+HOSP_009,Parkview Medical Complex,Radiologist,Evening,14:00,22:00,4,10
+HOSP_009,Parkview Medical Complex,Radiologist,Night,22:00,06:00,4,10
+HOSP_009,Parkview Medical Complex,Cardiologist,Morning,06:00,14:00,4,12
+HOSP_009,Parkview Medical Complex,Cardiologist,Evening,14:00,22:00,3,12
+HOSP_009,Parkview Medical Complex,Cardiologist,Night,22:00,06:00,4,12
+HOSP_009,Parkview Medical Complex,Neurologist,Morning,06:00,14:00,2,9
+HOSP_009,Parkview Medical Complex,Neurologist,Evening,14:00,22:00,2,9
+HOSP_009,Parkview Medical Complex,Neurologist,Night,22:00,06:00,2,9
+HOSP_009,Parkview Medical Complex,Pediatrician,Morning,06:00,14:00,5,13
+HOSP_009,Parkview Medical Complex,Pediatrician,Evening,14:00,22:00,4,13
+HOSP_009,Parkview Medical Complex,Pediatrician,Night,22:00,06:00,3,13
+HOSP_009,Parkview Medical Complex,General Practitioner,Morning,06:00,14:00,4,12
+HOSP_009,Parkview Medical Complex,General Practitioner,Evening,14:00,22:00,4,12
+HOSP_009,Parkview Medical Complex,General Practitioner,Night,22:00,06:00,3,12
+HOSP_009,Parkview Medical Complex,ICU Nurse,Morning,06:00,14:00,13,55
+HOSP_009,Parkview Medical Complex,ICU Nurse,Evening,14:00,22:00,21,55
+HOSP_009,Parkview Medical Complex,ICU Nurse,Night,22:00,06:00,15,55
+HOSP_009,Parkview Medical Complex,Emergency Nurse,Morning,06:00,14:00,9,36
+HOSP_009,Parkview Medical Complex,Emergency Nurse,Evening,14:00,22:00,10,36
+HOSP_009,Parkview Medical Complex,Emergency Nurse,Night,22:00,06:00,10,36
+HOSP_009,Parkview Medical Complex,Surgical Nurse,Morning,06:00,14:00,9,24
+HOSP_009,Parkview Medical Complex,Surgical Nurse,Evening,14:00,22:00,6,24
+HOSP_009,Parkview Medical Complex,Surgical Nurse,Night,22:00,06:00,7,24
+HOSP_009,Parkview Medical Complex,General Nurse,Morning,06:00,14:00,18,60
+HOSP_009,Parkview Medical Complex,General Nurse,Evening,14:00,22:00,21,60
+HOSP_009,Parkview Medical Complex,General Nurse,Night,22:00,06:00,24,60
+HOSP_009,Parkview Medical Complex,Lab Technician,Morning,06:00,14:00,3,9
+HOSP_009,Parkview Medical Complex,Lab Technician,Evening,14:00,22:00,3,9
+HOSP_009,Parkview Medical Complex,Lab Technician,Night,22:00,06:00,3,9
+HOSP_009,Parkview Medical Complex,Radiologic Technologist,Morning,06:00,14:00,2,9
+HOSP_009,Parkview Medical Complex,Radiologic Technologist,Evening,14:00,22:00,2,9
+HOSP_009,Parkview Medical Complex,Radiologic Technologist,Night,22:00,06:00,3,9
+HOSP_009,Parkview Medical Complex,Pharmacist,Morning,06:00,14:00,3,12
+HOSP_009,Parkview Medical Complex,Pharmacist,Evening,14:00,22:00,4,12
+HOSP_009,Parkview Medical Complex,Pharmacist,Night,22:00,06:00,4,12
+HOSP_009,Parkview Medical Complex,Respiratory Therapist,Morning,06:00,14:00,5,13
+HOSP_009,Parkview Medical Complex,Respiratory Therapist,Evening,14:00,22:00,5,13
+HOSP_009,Parkview Medical Complex,Respiratory Therapist,Night,22:00,06:00,4,13
+HOSP_009,Parkview Medical Complex,Physical Therapist,Morning,06:00,14:00,3,9
+HOSP_009,Parkview Medical Complex,Physical Therapist,Evening,14:00,22:00,3,9
+HOSP_009,Parkview Medical Complex,Physical Therapist,Night,22:00,06:00,2,9
+HOSP_009,Parkview Medical Complex,Administrative Staff,Morning,06:00,14:00,3,12
+HOSP_009,Parkview Medical Complex,Administrative Staff,Evening,14:00,22:00,4,12
+HOSP_009,Parkview Medical Complex,Administrative Staff,Night,22:00,06:00,4,12
+HOSP_010,Eastside General Hospital,Emergency Physician,Morning,06:00,14:00,3,12
+HOSP_010,Eastside General Hospital,Emergency Physician,Evening,14:00,22:00,4,12
+HOSP_010,Eastside General Hospital,Emergency Physician,Night,22:00,06:00,4,12
+HOSP_010,Eastside General Hospital,Surgeon,Morning,06:00,14:00,2,9
+HOSP_010,Eastside General Hospital,Surgeon,Evening,14:00,22:00,2,9
+HOSP_010,Eastside General Hospital,Surgeon,Night,22:00,06:00,3,9
+HOSP_010,Eastside General Hospital,Anesthesiologist,Morning,06:00,14:00,3,9
+HOSP_010,Eastside General Hospital,Anesthesiologist,Evening,14:00,22:00,2,9
+HOSP_010,Eastside General Hospital,Anesthesiologist,Night,22:00,06:00,2,9
+HOSP_010,Eastside General Hospital,Radiologist,Morning,06:00,14:00,3,12
+HOSP_010,Eastside General Hospital,Radiologist,Evening,14:00,22:00,3,12
+HOSP_010,Eastside General Hospital,Radiologist,Night,22:00,06:00,4,12
+HOSP_010,Eastside General Hospital,Cardiologist,Morning,06:00,14:00,3,10
+HOSP_010,Eastside General Hospital,Cardiologist,Evening,14:00,22:00,4,10
+HOSP_010,Eastside General Hospital,Cardiologist,Night,22:00,06:00,4,10
+HOSP_010,Eastside General Hospital,Neurologist,Morning,06:00,14:00,2,9
+HOSP_010,Eastside General Hospital,Neurologist,Evening,14:00,22:00,2,9
+HOSP_010,Eastside General Hospital,Neurologist,Night,22:00,06:00,2,9
+HOSP_010,Eastside General Hospital,Pediatrician,Morning,06:00,14:00,4,12
+HOSP_010,Eastside General Hospital,Pediatrician,Evening,14:00,22:00,4,12
+HOSP_010,Eastside General Hospital,Pediatrician,Night,22:00,06:00,3,12
+HOSP_010,Eastside General Hospital,General Practitioner,Morning,06:00,14:00,3,10
+HOSP_010,Eastside General Hospital,General Practitioner,Evening,14:00,22:00,4,10
+HOSP_010,Eastside General Hospital,General Practitioner,Night,22:00,06:00,4,10
+HOSP_010,Eastside General Hospital,ICU Nurse,Morning,06:00,14:00,6,27
+HOSP_010,Eastside General Hospital,ICU Nurse,Evening,14:00,22:00,6,27
+HOSP_010,Eastside General Hospital,ICU Nurse,Night,22:00,06:00,10,27
+HOSP_010,Eastside General Hospital,Emergency Nurse,Morning,06:00,14:00,12,37
+HOSP_010,Eastside General Hospital,Emergency Nurse,Evening,14:00,22:00,10,37
+HOSP_010,Eastside General Hospital,Emergency Nurse,Night,22:00,06:00,11,37
+HOSP_010,Eastside General Hospital,Surgical Nurse,Morning,06:00,14:00,16,58
+HOSP_010,Eastside General Hospital,Surgical Nurse,Evening,14:00,22:00,14,58
+HOSP_010,Eastside General Hospital,Surgical Nurse,Night,22:00,06:00,23,58
+HOSP_010,Eastside General Hospital,General Nurse,Morning,06:00,14:00,13,36
+HOSP_010,Eastside General Hospital,General Nurse,Evening,14:00,22:00,10,36
+HOSP_010,Eastside General Hospital,General Nurse,Night,22:00,06:00,10,36
+HOSP_010,Eastside General Hospital,Lab Technician,Morning,06:00,14:00,5,21
+HOSP_010,Eastside General Hospital,Lab Technician,Evening,14:00,22:00,7,21
+HOSP_010,Eastside General Hospital,Lab Technician,Night,22:00,06:00,8,21
+HOSP_010,Eastside General Hospital,Radiologic Technologist,Morning,06:00,14:00,2,9
+HOSP_010,Eastside General Hospital,Radiologic Technologist,Evening,14:00,22:00,3,9
+HOSP_010,Eastside General Hospital,Radiologic Technologist,Night,22:00,06:00,3,9
+HOSP_010,Eastside General Hospital,Pharmacist,Morning,06:00,14:00,1,6
+HOSP_010,Eastside General Hospital,Pharmacist,Evening,14:00,22:00,1,6
+HOSP_010,Eastside General Hospital,Pharmacist,Night,22:00,06:00,2,6
+HOSP_010,Eastside General Hospital,Respiratory Therapist,Morning,06:00,14:00,4,13
+HOSP_010,Eastside General Hospital,Respiratory Therapist,Evening,14:00,22:00,5,13
+HOSP_010,Eastside General Hospital,Respiratory Therapist,Night,22:00,06:00,3,13
+HOSP_010,Eastside General Hospital,Physical Therapist,Morning,06:00,14:00,2,7
+HOSP_010,Eastside General Hospital,Physical Therapist,Evening,14:00,22:00,1,7
+HOSP_010,Eastside General Hospital,Physical Therapist,Night,22:00,06:00,2,7
+HOSP_010,Eastside General Hospital,Administrative Staff,Morning,06:00,14:00,4,13
+HOSP_010,Eastside General Hospital,Administrative Staff,Evening,14:00,22:00,4,13
+HOSP_010,Eastside General Hospital,Administrative Staff,Night,22:00,06:00,5,13
+HOSP_011,Westbrook Health Center,Emergency Physician,Morning,06:00,14:00,1,7
+HOSP_011,Westbrook Health Center,Emergency Physician,Evening,14:00,22:00,2,7
+HOSP_011,Westbrook Health Center,Emergency Physician,Night,22:00,06:00,2,7
+HOSP_011,Westbrook Health Center,Surgeon,Morning,06:00,14:00,1,6
+HOSP_011,Westbrook Health Center,Surgeon,Evening,14:00,22:00,1,6
+HOSP_011,Westbrook Health Center,Surgeon,Night,22:00,06:00,2,6
+HOSP_011,Westbrook Health Center,Anesthesiologist,Morning,06:00,14:00,1,6
+HOSP_011,Westbrook Health Center,Anesthesiologist,Evening,14:00,22:00,1,6
+HOSP_011,Westbrook Health Center,Anesthesiologist,Night,22:00,06:00,1,6
+HOSP_011,Westbrook Health Center,Radiologist,Morning,06:00,14:00,3,8
+HOSP_011,Westbrook Health Center,Radiologist,Evening,14:00,22:00,2,8
+HOSP_011,Westbrook Health Center,Radiologist,Night,22:00,06:00,3,8
+HOSP_011,Westbrook Health Center,Cardiologist,Morning,06:00,14:00,2,6
+HOSP_011,Westbrook Health Center,Cardiologist,Evening,14:00,22:00,2,6
+HOSP_011,Westbrook Health Center,Cardiologist,Night,22:00,06:00,2,6
+HOSP_011,Westbrook Health Center,Neurologist,Morning,06:00,14:00,1,6
+HOSP_011,Westbrook Health Center,Neurologist,Evening,14:00,22:00,2,6
+HOSP_011,Westbrook Health Center,Neurologist,Night,22:00,06:00,1,6
+HOSP_011,Westbrook Health Center,Pediatrician,Morning,06:00,14:00,4,12
+HOSP_011,Westbrook Health Center,Pediatrician,Evening,14:00,22:00,3,12
+HOSP_011,Westbrook Health Center,Pediatrician,Night,22:00,06:00,3,12
+HOSP_011,Westbrook Health Center,General Practitioner,Morning,06:00,14:00,4,12
+HOSP_011,Westbrook Health Center,General Practitioner,Evening,14:00,22:00,3,12
+HOSP_011,Westbrook Health Center,General Practitioner,Night,22:00,06:00,3,12
+HOSP_011,Westbrook Health Center,ICU Nurse,Morning,06:00,14:00,7,31
+HOSP_011,Westbrook Health Center,ICU Nurse,Evening,14:00,22:00,10,31
+HOSP_011,Westbrook Health Center,ICU Nurse,Night,22:00,06:00,12,31
+HOSP_011,Westbrook Health Center,Emergency Nurse,Morning,06:00,14:00,6,15
+HOSP_011,Westbrook Health Center,Emergency Nurse,Evening,14:00,22:00,5,15
+HOSP_011,Westbrook Health Center,Emergency Nurse,Night,22:00,06:00,4,15
+HOSP_011,Westbrook Health Center,Surgical Nurse,Morning,06:00,14:00,10,26
+HOSP_011,Westbrook Health Center,Surgical Nurse,Evening,14:00,22:00,8,26
+HOSP_011,Westbrook Health Center,Surgical Nurse,Night,22:00,06:00,9,26
+HOSP_011,Westbrook Health Center,General Nurse,Morning,06:00,14:00,7,26
+HOSP_011,Westbrook Health Center,General Nurse,Evening,14:00,22:00,10,26
+HOSP_011,Westbrook Health Center,General Nurse,Night,22:00,06:00,9,26
+HOSP_011,Westbrook Health Center,Lab Technician,Morning,06:00,14:00,2,7
+HOSP_011,Westbrook Health Center,Lab Technician,Evening,14:00,22:00,2,7
+HOSP_011,Westbrook Health Center,Lab Technician,Night,22:00,06:00,1,7
+HOSP_011,Westbrook Health Center,Radiologic Technologist,Morning,06:00,14:00,0,3
+HOSP_011,Westbrook Health Center,Radiologic Technologist,Evening,14:00,22:00,1,3
+HOSP_011,Westbrook Health Center,Radiologic Technologist,Night,22:00,06:00,0,3
+HOSP_011,Westbrook Health Center,Pharmacist,Morning,06:00,14:00,1,4
+HOSP_011,Westbrook Health Center,Pharmacist,Evening,14:00,22:00,1,4
+HOSP_011,Westbrook Health Center,Pharmacist,Night,22:00,06:00,1,4
+HOSP_011,Westbrook Health Center,Respiratory Therapist,Morning,06:00,14:00,3,10
+HOSP_011,Westbrook Health Center,Respiratory Therapist,Evening,14:00,22:00,2,10
+HOSP_011,Westbrook Health Center,Respiratory Therapist,Night,22:00,06:00,4,10
+HOSP_011,Westbrook Health Center,Physical Therapist,Morning,06:00,14:00,2,8
+HOSP_011,Westbrook Health Center,Physical Therapist,Evening,14:00,22:00,2,8
+HOSP_011,Westbrook Health Center,Physical Therapist,Night,22:00,06:00,2,8
+HOSP_011,Westbrook Health Center,Administrative Staff,Morning,06:00,14:00,2,11
+HOSP_011,Westbrook Health Center,Administrative Staff,Evening,14:00,22:00,2,11
+HOSP_011,Westbrook Health Center,Administrative Staff,Night,22:00,06:00,2,11
+HOSP_012,Highland Medical Institute,Emergency Physician,Morning,06:00,14:00,0,2
+HOSP_012,Highland Medical Institute,Emergency Physician,Evening,14:00,22:00,0,2
+HOSP_012,Highland Medical Institute,Emergency Physician,Night,22:00,06:00,0,2
+HOSP_012,Highland Medical Institute,Surgeon,Morning,06:00,14:00,1,3
+HOSP_012,Highland Medical Institute,Surgeon,Evening,14:00,22:00,0,3
+HOSP_012,Highland Medical Institute,Surgeon,Night,22:00,06:00,1,3
+HOSP_012,Highland Medical Institute,Anesthesiologist,Morning,06:00,14:00,0,3
+HOSP_012,Highland Medical Institute,Anesthesiologist,Evening,14:00,22:00,0,3
+HOSP_012,Highland Medical Institute,Anesthesiologist,Night,22:00,06:00,1,3
+HOSP_012,Highland Medical Institute,Radiologist,Morning,06:00,14:00,1,4
+HOSP_012,Highland Medical Institute,Radiologist,Evening,14:00,22:00,1,4
+HOSP_012,Highland Medical Institute,Radiologist,Night,22:00,06:00,1,4
+HOSP_012,Highland Medical Institute,Cardiologist,Morning,06:00,14:00,0,2
+HOSP_012,Highland Medical Institute,Cardiologist,Evening,14:00,22:00,0,2
+HOSP_012,Highland Medical Institute,Cardiologist,Night,22:00,06:00,0,2
+HOSP_012,Highland Medical Institute,Neurologist,Morning,06:00,14:00,0,1
+HOSP_012,Highland Medical Institute,Neurologist,Evening,14:00,22:00,0,1
+HOSP_012,Highland Medical Institute,Neurologist,Night,22:00,06:00,0,1
+HOSP_012,Highland Medical Institute,Pediatrician,Morning,06:00,14:00,1,6
+HOSP_012,Highland Medical Institute,Pediatrician,Evening,14:00,22:00,2,6
+HOSP_012,Highland Medical Institute,Pediatrician,Night,22:00,06:00,1,6
+HOSP_012,Highland Medical Institute,General Practitioner,Morning,06:00,14:00,1,5
+HOSP_012,Highland Medical Institute,General Practitioner,Evening,14:00,22:00,2,5
+HOSP_012,Highland Medical Institute,General Practitioner,Night,22:00,06:00,1,5
+HOSP_012,Highland Medical Institute,ICU Nurse,Morning,06:00,14:00,7,21
+HOSP_012,Highland Medical Institute,ICU Nurse,Evening,14:00,22:00,7,21
+HOSP_012,Highland Medical Institute,ICU Nurse,Night,22:00,06:00,6,21
+HOSP_012,Highland Medical Institute,Emergency Nurse,Morning,06:00,14:00,3,15
+HOSP_012,Highland Medical Institute,Emergency Nurse,Evening,14:00,22:00,3,15
+HOSP_012,Highland Medical Institute,Emergency Nurse,Night,22:00,06:00,3,15
+HOSP_012,Highland Medical Institute,Surgical Nurse,Morning,06:00,14:00,3,10
+HOSP_012,Highland Medical Institute,Surgical Nurse,Evening,14:00,22:00,3,10
+HOSP_012,Highland Medical Institute,Surgical Nurse,Night,22:00,06:00,4,10
+HOSP_012,Highland Medical Institute,General Nurse,Morning,06:00,14:00,4,13
+HOSP_012,Highland Medical Institute,General Nurse,Evening,14:00,22:00,4,13
+HOSP_012,Highland Medical Institute,General Nurse,Night,22:00,06:00,3,13
+HOSP_012,Highland Medical Institute,Lab Technician,Morning,06:00,14:00,3,9
+HOSP_012,Highland Medical Institute,Lab Technician,Evening,14:00,22:00,3,9
+HOSP_012,Highland Medical Institute,Lab Technician,Night,22:00,06:00,3,9
+HOSP_012,Highland Medical Institute,Radiologic Technologist,Morning,06:00,14:00,1,4
+HOSP_012,Highland Medical Institute,Radiologic Technologist,Evening,14:00,22:00,1,4
+HOSP_012,Highland Medical Institute,Radiologic Technologist,Night,22:00,06:00,1,4
+HOSP_012,Highland Medical Institute,Pharmacist,Morning,06:00,14:00,2,7
+HOSP_012,Highland Medical Institute,Pharmacist,Evening,14:00,22:00,2,7
+HOSP_012,Highland Medical Institute,Pharmacist,Night,22:00,06:00,2,7
+HOSP_012,Highland Medical Institute,Respiratory Therapist,Morning,06:00,14:00,0,3
+HOSP_012,Highland Medical Institute,Respiratory Therapist,Evening,14:00,22:00,1,3
+HOSP_012,Highland Medical Institute,Respiratory Therapist,Night,22:00,06:00,1,3
+HOSP_012,Highland Medical Institute,Physical Therapist,Morning,06:00,14:00,1,6
+HOSP_012,Highland Medical Institute,Physical Therapist,Evening,14:00,22:00,1,6
+HOSP_012,Highland Medical Institute,Physical Therapist,Night,22:00,06:00,2,6
+HOSP_012,Highland Medical Institute,Administrative Staff,Morning,06:00,14:00,2,6
+HOSP_012,Highland Medical Institute,Administrative Staff,Evening,14:00,22:00,2,6
+HOSP_012,Highland Medical Institute,Administrative Staff,Night,22:00,06:00,1,6
+HOSP_013,Oakwood Community Hospital,Emergency Physician,Morning,06:00,14:00,2,7
+HOSP_013,Oakwood Community Hospital,Emergency Physician,Evening,14:00,22:00,1,7
+HOSP_013,Oakwood Community Hospital,Emergency Physician,Night,22:00,06:00,1,7
+HOSP_013,Oakwood Community Hospital,Surgeon,Morning,06:00,14:00,3,12
+HOSP_013,Oakwood Community Hospital,Surgeon,Evening,14:00,22:00,4,12
+HOSP_013,Oakwood Community Hospital,Surgeon,Night,22:00,06:00,3,12
+HOSP_013,Oakwood Community Hospital,Anesthesiologist,Morning,06:00,14:00,4,10
+HOSP_013,Oakwood Community Hospital,Anesthesiologist,Evening,14:00,22:00,2,10
+HOSP_013,Oakwood Community Hospital,Anesthesiologist,Night,22:00,06:00,3,10
+HOSP_013,Oakwood Community Hospital,Radiologist,Morning,06:00,14:00,1,4
+HOSP_013,Oakwood Community Hospital,Radiologist,Evening,14:00,22:00,1,4
+HOSP_013,Oakwood Community Hospital,Radiologist,Night,22:00,06:00,1,4
+HOSP_013,Oakwood Community Hospital,Cardiologist,Morning,06:00,14:00,2,9
+HOSP_013,Oakwood Community Hospital,Cardiologist,Evening,14:00,22:00,3,9
+HOSP_013,Oakwood Community Hospital,Cardiologist,Night,22:00,06:00,3,9
+HOSP_013,Oakwood Community Hospital,Neurologist,Morning,06:00,14:00,2,7
+HOSP_013,Oakwood Community Hospital,Neurologist,Evening,14:00,22:00,2,7
+HOSP_013,Oakwood Community Hospital,Neurologist,Night,22:00,06:00,2,7
+HOSP_013,Oakwood Community Hospital,Pediatrician,Morning,06:00,14:00,2,6
+HOSP_013,Oakwood Community Hospital,Pediatrician,Evening,14:00,22:00,1,6
+HOSP_013,Oakwood Community Hospital,Pediatrician,Night,22:00,06:00,2,6
+HOSP_013,Oakwood Community Hospital,General Practitioner,Morning,06:00,14:00,3,15
+HOSP_013,Oakwood Community Hospital,General Practitioner,Evening,14:00,22:00,4,15
+HOSP_013,Oakwood Community Hospital,General Practitioner,Night,22:00,06:00,4,15
+HOSP_013,Oakwood Community Hospital,ICU Nurse,Morning,06:00,14:00,18,51
+HOSP_013,Oakwood Community Hospital,ICU Nurse,Evening,14:00,22:00,18,51
+HOSP_013,Oakwood Community Hospital,ICU Nurse,Night,22:00,06:00,19,51
+HOSP_013,Oakwood Community Hospital,Emergency Nurse,Morning,06:00,14:00,10,25
+HOSP_013,Oakwood Community Hospital,Emergency Nurse,Evening,14:00,22:00,10,25
+HOSP_013,Oakwood Community Hospital,Emergency Nurse,Night,22:00,06:00,8,25
+HOSP_013,Oakwood Community Hospital,Surgical Nurse,Morning,06:00,14:00,16,42
+HOSP_013,Oakwood Community Hospital,Surgical Nurse,Evening,14:00,22:00,10,42
+HOSP_013,Oakwood Community Hospital,Surgical Nurse,Night,22:00,06:00,12,42
+HOSP_013,Oakwood Community Hospital,General Nurse,Morning,06:00,14:00,15,55
+HOSP_013,Oakwood Community Hospital,General Nurse,Evening,14:00,22:00,19,55
+HOSP_013,Oakwood Community Hospital,General Nurse,Night,22:00,06:00,13,55
+HOSP_013,Oakwood Community Hospital,Lab Technician,Morning,06:00,14:00,4,10
+HOSP_013,Oakwood Community Hospital,Lab Technician,Evening,14:00,22:00,4,10
+HOSP_013,Oakwood Community Hospital,Lab Technician,Night,22:00,06:00,3,10
+HOSP_013,Oakwood Community Hospital,Radiologic Technologist,Morning,06:00,14:00,2,7
+HOSP_013,Oakwood Community Hospital,Radiologic Technologist,Evening,14:00,22:00,1,7
+HOSP_013,Oakwood Community Hospital,Radiologic Technologist,Night,22:00,06:00,1,7
+HOSP_013,Oakwood Community Hospital,Pharmacist,Morning,06:00,14:00,3,10
+HOSP_013,Oakwood Community Hospital,Pharmacist,Evening,14:00,22:00,4,10
+HOSP_013,Oakwood Community Hospital,Pharmacist,Night,22:00,06:00,4,10
+HOSP_013,Oakwood Community Hospital,Respiratory Therapist,Morning,06:00,14:00,4,12
+HOSP_013,Oakwood Community Hospital,Respiratory Therapist,Evening,14:00,22:00,4,12
+HOSP_013,Oakwood Community Hospital,Respiratory Therapist,Night,22:00,06:00,4,12
+HOSP_013,Oakwood Community Hospital,Physical Therapist,Morning,06:00,14:00,6,15
+HOSP_013,Oakwood Community Hospital,Physical Therapist,Evening,14:00,22:00,4,15
+HOSP_013,Oakwood Community Hospital,Physical Therapist,Night,22:00,06:00,4,15
+HOSP_013,Oakwood Community Hospital,Administrative Staff,Morning,06:00,14:00,6,15
+HOSP_013,Oakwood Community Hospital,Administrative Staff,Evening,14:00,22:00,3,15
+HOSP_013,Oakwood Community Hospital,Administrative Staff,Night,22:00,06:00,3,15
+HOSP_014,Central Care Hospital,Emergency Physician,Morning,06:00,14:00,0,3
+HOSP_014,Central Care Hospital,Emergency Physician,Evening,14:00,22:00,0,3
+HOSP_014,Central Care Hospital,Emergency Physician,Night,22:00,06:00,0,3
+HOSP_014,Central Care Hospital,Surgeon,Morning,06:00,14:00,0,2
+HOSP_014,Central Care Hospital,Surgeon,Evening,14:00,22:00,0,2
+HOSP_014,Central Care Hospital,Surgeon,Night,22:00,06:00,0,2
+HOSP_014,Central Care Hospital,Anesthesiologist,Morning,06:00,14:00,0,1
+HOSP_014,Central Care Hospital,Anesthesiologist,Evening,14:00,22:00,0,1
+HOSP_014,Central Care Hospital,Anesthesiologist,Night,22:00,06:00,0,1
+HOSP_014,Central Care Hospital,Radiologist,Morning,06:00,14:00,0,1
+HOSP_014,Central Care Hospital,Radiologist,Evening,14:00,22:00,0,1
+HOSP_014,Central Care Hospital,Radiologist,Night,22:00,06:00,0,1
+HOSP_014,Central Care Hospital,Cardiologist,Morning,06:00,14:00,0,1
+HOSP_014,Central Care Hospital,Cardiologist,Evening,14:00,22:00,0,1
+HOSP_014,Central Care Hospital,Cardiologist,Night,22:00,06:00,0,1
+HOSP_014,Central Care Hospital,Neurologist,Morning,06:00,14:00,1,3
+HOSP_014,Central Care Hospital,Neurologist,Evening,14:00,22:00,1,3
+HOSP_014,Central Care Hospital,Neurologist,Night,22:00,06:00,0,3
+HOSP_014,Central Care Hospital,Pediatrician,Morning,06:00,14:00,0,2
+HOSP_014,Central Care Hospital,Pediatrician,Evening,14:00,22:00,0,2
+HOSP_014,Central Care Hospital,Pediatrician,Night,22:00,06:00,0,2
+HOSP_014,Central Care Hospital,General Practitioner,Morning,06:00,14:00,2,6
+HOSP_014,Central Care Hospital,General Practitioner,Evening,14:00,22:00,1,6
+HOSP_014,Central Care Hospital,General Practitioner,Night,22:00,06:00,2,6
+HOSP_014,Central Care Hospital,ICU Nurse,Morning,06:00,14:00,5,13
+HOSP_014,Central Care Hospital,ICU Nurse,Evening,14:00,22:00,5,13
+HOSP_014,Central Care Hospital,ICU Nurse,Night,22:00,06:00,5,13
+HOSP_014,Central Care Hospital,Emergency Nurse,Morning,06:00,14:00,5,16
+HOSP_014,Central Care Hospital,Emergency Nurse,Evening,14:00,22:00,6,16
+HOSP_014,Central Care Hospital,Emergency Nurse,Night,22:00,06:00,4,16
+HOSP_014,Central Care Hospital,Surgical Nurse,Morning,06:00,14:00,8,22
+HOSP_014,Central Care Hospital,Surgical Nurse,Evening,14:00,22:00,8,22
+HOSP_014,Central Care Hospital,Surgical Nurse,Night,22:00,06:00,8,22
+HOSP_014,Central Care Hospital,General Nurse,Morning,06:00,14:00,4,16
+HOSP_014,Central Care Hospital,General Nurse,Evening,14:00,22:00,6,16
+HOSP_014,Central Care Hospital,General Nurse,Night,22:00,06:00,5,16
+HOSP_014,Central Care Hospital,Lab Technician,Morning,06:00,14:00,1,7
+HOSP_014,Central Care Hospital,Lab Technician,Evening,14:00,22:00,1,7
+HOSP_014,Central Care Hospital,Lab Technician,Night,22:00,06:00,1,7
+HOSP_014,Central Care Hospital,Radiologic Technologist,Morning,06:00,14:00,0,2
+HOSP_014,Central Care Hospital,Radiologic Technologist,Evening,14:00,22:00,0,2
+HOSP_014,Central Care Hospital,Radiologic Technologist,Night,22:00,06:00,0,2
+HOSP_014,Central Care Hospital,Pharmacist,Morning,06:00,14:00,1,3
+HOSP_014,Central Care Hospital,Pharmacist,Evening,14:00,22:00,1,3
+HOSP_014,Central Care Hospital,Pharmacist,Night,22:00,06:00,0,3
+HOSP_014,Central Care Hospital,Respiratory Therapist,Morning,06:00,14:00,2,6
+HOSP_014,Central Care Hospital,Respiratory Therapist,Evening,14:00,22:00,2,6
+HOSP_014,Central Care Hospital,Respiratory Therapist,Night,22:00,06:00,2,6
+HOSP_014,Central Care Hospital,Physical Therapist,Morning,06:00,14:00,1,3
+HOSP_014,Central Care Hospital,Physical Therapist,Evening,14:00,22:00,1,3
+HOSP_014,Central Care Hospital,Physical Therapist,Night,22:00,06:00,1,3
+HOSP_014,Central Care Hospital,Administrative Staff,Morning,06:00,14:00,1,6
+HOSP_014,Central Care Hospital,Administrative Staff,Evening,14:00,22:00,1,6
+HOSP_014,Central Care Hospital,Administrative Staff,Night,22:00,06:00,1,6
+HOSP_015,Greenfield Medical Center,Emergency Physician,Morning,06:00,14:00,1,3
+HOSP_015,Greenfield Medical Center,Emergency Physician,Evening,14:00,22:00,1,3
+HOSP_015,Greenfield Medical Center,Emergency Physician,Night,22:00,06:00,0,3
+HOSP_015,Greenfield Medical Center,Surgeon,Morning,06:00,14:00,2,6
+HOSP_015,Greenfield Medical Center,Surgeon,Evening,14:00,22:00,1,6
+HOSP_015,Greenfield Medical Center,Surgeon,Night,22:00,06:00,1,6
+HOSP_015,Greenfield Medical Center,Anesthesiologist,Morning,06:00,14:00,3,8
+HOSP_015,Greenfield Medical Center,Anesthesiologist,Evening,14:00,22:00,3,8
+HOSP_015,Greenfield Medical Center,Anesthesiologist,Night,22:00,06:00,3,8
+HOSP_015,Greenfield Medical Center,Radiologist,Morning,06:00,14:00,3,8
+HOSP_015,Greenfield Medical Center,Radiologist,Evening,14:00,22:00,3,8
+HOSP_015,Greenfield Medical Center,Radiologist,Night,22:00,06:00,3,8
+HOSP_015,Greenfield Medical Center,Cardiologist,Morning,06:00,14:00,1,6
+HOSP_015,Greenfield Medical Center,Cardiologist,Evening,14:00,22:00,1,6
+HOSP_015,Greenfield Medical Center,Cardiologist,Night,22:00,06:00,2,6
+HOSP_015,Greenfield Medical Center,Neurologist,Morning,06:00,14:00,2,6
+HOSP_015,Greenfield Medical Center,Neurologist,Evening,14:00,22:00,1,6
+HOSP_015,Greenfield Medical Center,Neurologist,Night,22:00,06:00,1,6
+HOSP_015,Greenfield Medical Center,Pediatrician,Morning,06:00,14:00,3,11
+HOSP_015,Greenfield Medical Center,Pediatrician,Evening,14:00,22:00,3,11
+HOSP_015,Greenfield Medical Center,Pediatrician,Night,22:00,06:00,4,11
+HOSP_015,Greenfield Medical Center,General Practitioner,Morning,06:00,14:00,1,7
+HOSP_015,Greenfield Medical Center,General Practitioner,Evening,14:00,22:00,1,7
+HOSP_015,Greenfield Medical Center,General Practitioner,Night,22:00,06:00,2,7
+HOSP_015,Greenfield Medical Center,ICU Nurse,Morning,06:00,14:00,16,40
+HOSP_015,Greenfield Medical Center,ICU Nurse,Evening,14:00,22:00,14,40
+HOSP_015,Greenfield Medical Center,ICU Nurse,Night,22:00,06:00,16,40
+HOSP_015,Greenfield Medical Center,Emergency Nurse,Morning,06:00,14:00,7,30
+HOSP_015,Greenfield Medical Center,Emergency Nurse,Evening,14:00,22:00,11,30
+HOSP_015,Greenfield Medical Center,Emergency Nurse,Night,22:00,06:00,11,30
+HOSP_015,Greenfield Medical Center,Surgical Nurse,Morning,06:00,14:00,12,35
+HOSP_015,Greenfield Medical Center,Surgical Nurse,Evening,14:00,22:00,10,35
+HOSP_015,Greenfield Medical Center,Surgical Nurse,Night,22:00,06:00,10,35
+HOSP_015,Greenfield Medical Center,General Nurse,Morning,06:00,14:00,7,25
+HOSP_015,Greenfield Medical Center,General Nurse,Evening,14:00,22:00,7,25
+HOSP_015,Greenfield Medical Center,General Nurse,Night,22:00,06:00,6,25
+HOSP_015,Greenfield Medical Center,Lab Technician,Morning,06:00,14:00,3,13
+HOSP_015,Greenfield Medical Center,Lab Technician,Evening,14:00,22:00,3,13
+HOSP_015,Greenfield Medical Center,Lab Technician,Night,22:00,06:00,4,13
+HOSP_015,Greenfield Medical Center,Radiologic Technologist,Morning,06:00,14:00,1,3
+HOSP_015,Greenfield Medical Center,Radiologic Technologist,Evening,14:00,22:00,0,3
+HOSP_015,Greenfield Medical Center,Radiologic Technologist,Night,22:00,06:00,1,3
+HOSP_015,Greenfield Medical Center,Pharmacist,Morning,06:00,14:00,2,8
+HOSP_015,Greenfield Medical Center,Pharmacist,Evening,14:00,22:00,3,8
+HOSP_015,Greenfield Medical Center,Pharmacist,Night,22:00,06:00,2,8
+HOSP_015,Greenfield Medical Center,Respiratory Therapist,Morning,06:00,14:00,2,10
+HOSP_015,Greenfield Medical Center,Respiratory Therapist,Evening,14:00,22:00,4,10
+HOSP_015,Greenfield Medical Center,Respiratory Therapist,Night,22:00,06:00,2,10
+HOSP_015,Greenfield Medical Center,Physical Therapist,Morning,06:00,14:00,3,12
+HOSP_015,Greenfield Medical Center,Physical Therapist,Evening,14:00,22:00,3,12
+HOSP_015,Greenfield Medical Center,Physical Therapist,Night,22:00,06:00,3,12
+HOSP_015,Greenfield Medical Center,Administrative Staff,Morning,06:00,14:00,2,10
+HOSP_015,Greenfield Medical Center,Administrative Staff,Evening,14:00,22:00,2,10
+HOSP_015,Greenfield Medical Center,Administrative Staff,Night,22:00,06:00,3,10
+HOSP_016,Harborview Hospital,Emergency Physician,Morning,06:00,14:00,1,6
+HOSP_016,Harborview Hospital,Emergency Physician,Evening,14:00,22:00,1,6
+HOSP_016,Harborview Hospital,Emergency Physician,Night,22:00,06:00,1,6
+HOSP_016,Harborview Hospital,Surgeon,Morning,06:00,14:00,1,6
+HOSP_016,Harborview Hospital,Surgeon,Evening,14:00,22:00,2,6
+HOSP_016,Harborview Hospital,Surgeon,Night,22:00,06:00,2,6
+HOSP_016,Harborview Hospital,Anesthesiologist,Morning,06:00,14:00,2,6
+HOSP_016,Harborview Hospital,Anesthesiologist,Evening,14:00,22:00,2,6
+HOSP_016,Harborview Hospital,Anesthesiologist,Night,22:00,06:00,1,6
+HOSP_016,Harborview Hospital,Radiologist,Morning,06:00,14:00,4,10
+HOSP_016,Harborview Hospital,Radiologist,Evening,14:00,22:00,4,10
+HOSP_016,Harborview Hospital,Radiologist,Night,22:00,06:00,2,10
+HOSP_016,Harborview Hospital,Cardiologist,Morning,06:00,14:00,1,4
+HOSP_016,Harborview Hospital,Cardiologist,Evening,14:00,22:00,1,4
+HOSP_016,Harborview Hospital,Cardiologist,Night,22:00,06:00,1,4
+HOSP_016,Harborview Hospital,Neurologist,Morning,06:00,14:00,4,12
+HOSP_016,Harborview Hospital,Neurologist,Evening,14:00,22:00,4,12
+HOSP_016,Harborview Hospital,Neurologist,Night,22:00,06:00,4,12
+HOSP_016,Harborview Hospital,Pediatrician,Morning,06:00,14:00,4,13
+HOSP_016,Harborview Hospital,Pediatrician,Evening,14:00,22:00,4,13
+HOSP_016,Harborview Hospital,Pediatrician,Night,22:00,06:00,3,13
+HOSP_016,Harborview Hospital,General Practitioner,Morning,06:00,14:00,6,15
+HOSP_016,Harborview Hospital,General Practitioner,Evening,14:00,22:00,3,15
+HOSP_016,Harborview Hospital,General Practitioner,Night,22:00,06:00,3,15
+HOSP_016,Harborview Hospital,ICU Nurse,Morning,06:00,14:00,6,24
+HOSP_016,Harborview Hospital,ICU Nurse,Evening,14:00,22:00,7,24
+HOSP_016,Harborview Hospital,ICU Nurse,Night,22:00,06:00,6,24
+HOSP_016,Harborview Hospital,Emergency Nurse,Morning,06:00,14:00,11,45
+HOSP_016,Harborview Hospital,Emergency Nurse,Evening,14:00,22:00,15,45
+HOSP_016,Harborview Hospital,Emergency Nurse,Night,22:00,06:00,13,45
+HOSP_016,Harborview Hospital,Surgical Nurse,Morning,06:00,14:00,6,24
+HOSP_016,Harborview Hospital,Surgical Nurse,Evening,14:00,22:00,9,24
+HOSP_016,Harborview Hospital,Surgical Nurse,Night,22:00,06:00,6,24
+HOSP_016,Harborview Hospital,General Nurse,Morning,06:00,14:00,14,52
+HOSP_016,Harborview Hospital,General Nurse,Evening,14:00,22:00,14,52
+HOSP_016,Harborview Hospital,General Nurse,Night,22:00,06:00,15,52
+HOSP_016,Harborview Hospital,Lab Technician,Morning,06:00,14:00,4,10
+HOSP_016,Harborview Hospital,Lab Technician,Evening,14:00,22:00,2,10
+HOSP_016,Harborview Hospital,Lab Technician,Night,22:00,06:00,2,10
+HOSP_016,Harborview Hospital,Radiologic Technologist,Morning,06:00,14:00,1,7
+HOSP_016,Harborview Hospital,Radiologic Technologist,Evening,14:00,22:00,2,7
+HOSP_016,Harborview Hospital,Radiologic Technologist,Night,22:00,06:00,1,7
+HOSP_016,Harborview Hospital,Pharmacist,Morning,06:00,14:00,4,18
+HOSP_016,Harborview Hospital,Pharmacist,Evening,14:00,22:00,7,18
+HOSP_016,Harborview Hospital,Pharmacist,Night,22:00,06:00,6,18
+HOSP_016,Harborview Hospital,Respiratory Therapist,Morning,06:00,14:00,1,7
+HOSP_016,Harborview Hospital,Respiratory Therapist,Evening,14:00,22:00,2,7
+HOSP_016,Harborview Hospital,Respiratory Therapist,Night,22:00,06:00,1,7
+HOSP_016,Harborview Hospital,Physical Therapist,Morning,06:00,14:00,7,18
+HOSP_016,Harborview Hospital,Physical Therapist,Evening,14:00,22:00,6,18
+HOSP_016,Harborview Hospital,Physical Therapist,Night,22:00,06:00,6,18
+HOSP_016,Harborview Hospital,Administrative Staff,Morning,06:00,14:00,4,12
+HOSP_016,Harborview Hospital,Administrative Staff,Evening,14:00,22:00,4,12
+HOSP_016,Harborview Hospital,Administrative Staff,Night,22:00,06:00,3,12
+HOSP_017,Summit Regional Medical,Emergency Physician,Morning,06:00,14:00,0,2
+HOSP_017,Summit Regional Medical,Emergency Physician,Evening,14:00,22:00,0,2
+HOSP_017,Summit Regional Medical,Emergency Physician,Night,22:00,06:00,0,2
+HOSP_017,Summit Regional Medical,Surgeon,Morning,06:00,14:00,0,2
+HOSP_017,Summit Regional Medical,Surgeon,Evening,14:00,22:00,0,2
+HOSP_017,Summit Regional Medical,Surgeon,Night,22:00,06:00,0,2
+HOSP_017,Summit Regional Medical,Anesthesiologist,Morning,06:00,14:00,0,2
+HOSP_017,Summit Regional Medical,Anesthesiologist,Evening,14:00,22:00,0,2
+HOSP_017,Summit Regional Medical,Anesthesiologist,Night,22:00,06:00,0,2
+HOSP_017,Summit Regional Medical,Radiologist,Morning,06:00,14:00,1,4
+HOSP_017,Summit Regional Medical,Radiologist,Evening,14:00,22:00,1,4
+HOSP_017,Summit Regional Medical,Radiologist,Night,22:00,06:00,1,4
+HOSP_017,Summit Regional Medical,Cardiologist,Morning,06:00,14:00,0,1
+HOSP_017,Summit Regional Medical,Cardiologist,Evening,14:00,22:00,0,1
+HOSP_017,Summit Regional Medical,Cardiologist,Night,22:00,06:00,0,1
+HOSP_017,Summit Regional Medical,Neurologist,Morning,06:00,14:00,1,4
+HOSP_017,Summit Regional Medical,Neurologist,Evening,14:00,22:00,1,4
+HOSP_017,Summit Regional Medical,Neurologist,Night,22:00,06:00,1,4
+HOSP_017,Summit Regional Medical,Pediatrician,Morning,06:00,14:00,2,6
+HOSP_017,Summit Regional Medical,Pediatrician,Evening,14:00,22:00,2,6
+HOSP_017,Summit Regional Medical,Pediatrician,Night,22:00,06:00,1,6
+HOSP_017,Summit Regional Medical,General Practitioner,Morning,06:00,14:00,0,2
+HOSP_017,Summit Regional Medical,General Practitioner,Evening,14:00,22:00,0,2
+HOSP_017,Summit Regional Medical,General Practitioner,Night,22:00,06:00,0,2
+HOSP_017,Summit Regional Medical,ICU Nurse,Morning,06:00,14:00,5,21
+HOSP_017,Summit Regional Medical,ICU Nurse,Evening,14:00,22:00,7,21
+HOSP_017,Summit Regional Medical,ICU Nurse,Night,22:00,06:00,6,21
+HOSP_017,Summit Regional Medical,Emergency Nurse,Morning,06:00,14:00,2,10
+HOSP_017,Summit Regional Medical,Emergency Nurse,Evening,14:00,22:00,4,10
+HOSP_017,Summit Regional Medical,Emergency Nurse,Night,22:00,06:00,2,10
+HOSP_017,Summit Regional Medical,Surgical Nurse,Morning,06:00,14:00,7,21
+HOSP_017,Summit Regional Medical,Surgical Nurse,Evening,14:00,22:00,7,21
+HOSP_017,Summit Regional Medical,Surgical Nurse,Night,22:00,06:00,5,21
+HOSP_017,Summit Regional Medical,General Nurse,Morning,06:00,14:00,3,11
+HOSP_017,Summit Regional Medical,General Nurse,Evening,14:00,22:00,3,11
+HOSP_017,Summit Regional Medical,General Nurse,Night,22:00,06:00,3,11
+HOSP_017,Summit Regional Medical,Lab Technician,Morning,06:00,14:00,1,6
+HOSP_017,Summit Regional Medical,Lab Technician,Evening,14:00,22:00,2,6
+HOSP_017,Summit Regional Medical,Lab Technician,Night,22:00,06:00,1,6
+HOSP_017,Summit Regional Medical,Radiologic Technologist,Morning,06:00,14:00,0,3
+HOSP_017,Summit Regional Medical,Radiologic Technologist,Evening,14:00,22:00,1,3
+HOSP_017,Summit Regional Medical,Radiologic Technologist,Night,22:00,06:00,0,3
+HOSP_017,Summit Regional Medical,Pharmacist,Morning,06:00,14:00,1,4
+HOSP_017,Summit Regional Medical,Pharmacist,Evening,14:00,22:00,1,4
+HOSP_017,Summit Regional Medical,Pharmacist,Night,22:00,06:00,1,4
+HOSP_017,Summit Regional Medical,Respiratory Therapist,Morning,06:00,14:00,1,4
+HOSP_017,Summit Regional Medical,Respiratory Therapist,Evening,14:00,22:00,1,4
+HOSP_017,Summit Regional Medical,Respiratory Therapist,Night,22:00,06:00,1,4
+HOSP_017,Summit Regional Medical,Physical Therapist,Morning,06:00,14:00,2,7
+HOSP_017,Summit Regional Medical,Physical Therapist,Evening,14:00,22:00,1,7
+HOSP_017,Summit Regional Medical,Physical Therapist,Night,22:00,06:00,1,7
+HOSP_017,Summit Regional Medical,Administrative Staff,Morning,06:00,14:00,1,4
+HOSP_017,Summit Regional Medical,Administrative Staff,Evening,14:00,22:00,1,4
+HOSP_017,Summit Regional Medical,Administrative Staff,Night,22:00,06:00,1,4
+HOSP_018,Bay Area Hospital,Emergency Physician,Morning,06:00,14:00,3,8
+HOSP_018,Bay Area Hospital,Emergency Physician,Evening,14:00,22:00,3,8
+HOSP_018,Bay Area Hospital,Emergency Physician,Night,22:00,06:00,3,8
+HOSP_018,Bay Area Hospital,Surgeon,Morning,06:00,14:00,1,5
+HOSP_018,Bay Area Hospital,Surgeon,Evening,14:00,22:00,2,5
+HOSP_018,Bay Area Hospital,Surgeon,Night,22:00,06:00,2,5
+HOSP_018,Bay Area Hospital,Anesthesiologist,Morning,06:00,14:00,2,7
+HOSP_018,Bay Area Hospital,Anesthesiologist,Evening,14:00,22:00,2,7
+HOSP_018,Bay Area Hospital,Anesthesiologist,Night,22:00,06:00,1,7
+HOSP_018,Bay Area Hospital,Radiologist,Morning,06:00,14:00,2,8
+HOSP_018,Bay Area Hospital,Radiologist,Evening,14:00,22:00,3,8
+HOSP_018,Bay Area Hospital,Radiologist,Night,22:00,06:00,3,8
+HOSP_018,Bay Area Hospital,Cardiologist,Morning,06:00,14:00,1,6
+HOSP_018,Bay Area Hospital,Cardiologist,Evening,14:00,22:00,2,6
+HOSP_018,Bay Area Hospital,Cardiologist,Night,22:00,06:00,2,6
+HOSP_018,Bay Area Hospital,Neurologist,Morning,06:00,14:00,1,4
+HOSP_018,Bay Area Hospital,Neurologist,Evening,14:00,22:00,1,4
+HOSP_018,Bay Area Hospital,Neurologist,Night,22:00,06:00,1,4
+HOSP_018,Bay Area Hospital,Pediatrician,Morning,06:00,14:00,2,5
+HOSP_018,Bay Area Hospital,Pediatrician,Evening,14:00,22:00,1,5
+HOSP_018,Bay Area Hospital,Pediatrician,Night,22:00,06:00,2,5
+HOSP_018,Bay Area Hospital,General Practitioner,Morning,06:00,14:00,2,8
+HOSP_018,Bay Area Hospital,General Practitioner,Evening,14:00,22:00,2,8
+HOSP_018,Bay Area Hospital,General Practitioner,Night,22:00,06:00,3,8
+HOSP_018,Bay Area Hospital,ICU Nurse,Morning,06:00,14:00,7,27
+HOSP_018,Bay Area Hospital,ICU Nurse,Evening,14:00,22:00,8,27
+HOSP_018,Bay Area Hospital,ICU Nurse,Night,22:00,06:00,9,27
+HOSP_018,Bay Area Hospital,Emergency Nurse,Morning,06:00,14:00,12,33
+HOSP_018,Bay Area Hospital,Emergency Nurse,Evening,14:00,22:00,9,33
+HOSP_018,Bay Area Hospital,Emergency Nurse,Night,22:00,06:00,9,33
+HOSP_018,Bay Area Hospital,Surgical Nurse,Morning,06:00,14:00,5,16
+HOSP_018,Bay Area Hospital,Surgical Nurse,Evening,14:00,22:00,4,16
+HOSP_018,Bay Area Hospital,Surgical Nurse,Night,22:00,06:00,6,16
+HOSP_018,Bay Area Hospital,General Nurse,Morning,06:00,14:00,8,31
+HOSP_018,Bay Area Hospital,General Nurse,Evening,14:00,22:00,8,31
+HOSP_018,Bay Area Hospital,General Nurse,Night,22:00,06:00,11,31
+HOSP_018,Bay Area Hospital,Lab Technician,Morning,06:00,14:00,3,14
+HOSP_018,Bay Area Hospital,Lab Technician,Evening,14:00,22:00,4,14
+HOSP_018,Bay Area Hospital,Lab Technician,Night,22:00,06:00,3,14
+HOSP_018,Bay Area Hospital,Radiologic Technologist,Morning,06:00,14:00,2,6
+HOSP_018,Bay Area Hospital,Radiologic Technologist,Evening,14:00,22:00,2,6
+HOSP_018,Bay Area Hospital,Radiologic Technologist,Night,22:00,06:00,1,6
+HOSP_018,Bay Area Hospital,Pharmacist,Morning,06:00,14:00,3,10
+HOSP_018,Bay Area Hospital,Pharmacist,Evening,14:00,22:00,3,10
+HOSP_018,Bay Area Hospital,Pharmacist,Night,22:00,06:00,4,10
+HOSP_018,Bay Area Hospital,Respiratory Therapist,Morning,06:00,14:00,3,9
+HOSP_018,Bay Area Hospital,Respiratory Therapist,Evening,14:00,22:00,2,9
+HOSP_018,Bay Area Hospital,Respiratory Therapist,Night,22:00,06:00,2,9
+HOSP_018,Bay Area Hospital,Physical Therapist,Morning,06:00,14:00,4,11
+HOSP_018,Bay Area Hospital,Physical Therapist,Evening,14:00,22:00,2,11
+HOSP_018,Bay Area Hospital,Physical Therapist,Night,22:00,06:00,3,11
+HOSP_018,Bay Area Hospital,Administrative Staff,Morning,06:00,14:00,2,6
+HOSP_018,Bay Area Hospital,Administrative Staff,Evening,14:00,22:00,2,6
+HOSP_018,Bay Area Hospital,Administrative Staff,Night,22:00,06:00,2,6
+HOSP_019,Valley View Medical Center,Emergency Physician,Morning,06:00,14:00,3,12
+HOSP_019,Valley View Medical Center,Emergency Physician,Evening,14:00,22:00,3,12
+HOSP_019,Valley View Medical Center,Emergency Physician,Night,22:00,06:00,4,12
+HOSP_019,Valley View Medical Center,Surgeon,Morning,06:00,14:00,2,9
+HOSP_019,Valley View Medical Center,Surgeon,Evening,14:00,22:00,2,9
+HOSP_019,Valley View Medical Center,Surgeon,Night,22:00,06:00,3,9
+HOSP_019,Valley View Medical Center,Anesthesiologist,Morning,06:00,14:00,1,4
+HOSP_019,Valley View Medical Center,Anesthesiologist,Evening,14:00,22:00,1,4
+HOSP_019,Valley View Medical Center,Anesthesiologist,Night,22:00,06:00,1,4
+HOSP_019,Valley View Medical Center,Radiologist,Morning,06:00,14:00,1,4
+HOSP_019,Valley View Medical Center,Radiologist,Evening,14:00,22:00,1,4
+HOSP_019,Valley View Medical Center,Radiologist,Night,22:00,06:00,1,4
+HOSP_019,Valley View Medical Center,Cardiologist,Morning,06:00,14:00,2,7
+HOSP_019,Valley View Medical Center,Cardiologist,Evening,14:00,22:00,1,7
+HOSP_019,Valley View Medical Center,Cardiologist,Night,22:00,06:00,2,7
+HOSP_019,Valley View Medical Center,Neurologist,Morning,06:00,14:00,2,9
+HOSP_019,Valley View Medical Center,Neurologist,Evening,14:00,22:00,3,9
+HOSP_019,Valley View Medical Center,Neurologist,Night,22:00,06:00,2,9
+HOSP_019,Valley View Medical Center,Pediatrician,Morning,06:00,14:00,2,6
+HOSP_019,Valley View Medical Center,Pediatrician,Evening,14:00,22:00,1,6
+HOSP_019,Valley View Medical Center,Pediatrician,Night,22:00,06:00,1,6
+HOSP_019,Valley View Medical Center,General Practitioner,Morning,06:00,14:00,2,6
+HOSP_019,Valley View Medical Center,General Practitioner,Evening,14:00,22:00,2,6
+HOSP_019,Valley View Medical Center,General Practitioner,Night,22:00,06:00,2,6
+HOSP_019,Valley View Medical Center,ICU Nurse,Morning,06:00,14:00,8,34
+HOSP_019,Valley View Medical Center,ICU Nurse,Evening,14:00,22:00,12,34
+HOSP_019,Valley View Medical Center,ICU Nurse,Night,22:00,06:00,13,34
+HOSP_019,Valley View Medical Center,Emergency Nurse,Morning,06:00,14:00,12,45
+HOSP_019,Valley View Medical Center,Emergency Nurse,Evening,14:00,22:00,17,45
+HOSP_019,Valley View Medical Center,Emergency Nurse,Night,22:00,06:00,14,45
+HOSP_019,Valley View Medical Center,Surgical Nurse,Morning,06:00,14:00,10,40
+HOSP_019,Valley View Medical Center,Surgical Nurse,Evening,14:00,22:00,14,40
+HOSP_019,Valley View Medical Center,Surgical Nurse,Night,22:00,06:00,10,40
+HOSP_019,Valley View Medical Center,General Nurse,Morning,06:00,14:00,8,33
+HOSP_019,Valley View Medical Center,General Nurse,Evening,14:00,22:00,12,33
+HOSP_019,Valley View Medical Center,General Nurse,Night,22:00,06:00,11,33
+HOSP_019,Valley View Medical Center,Lab Technician,Morning,06:00,14:00,2,9
+HOSP_019,Valley View Medical Center,Lab Technician,Evening,14:00,22:00,2,9
+HOSP_019,Valley View Medical Center,Lab Technician,Night,22:00,06:00,2,9
+HOSP_019,Valley View Medical Center,Radiologic Technologist,Morning,06:00,14:00,1,6
+HOSP_019,Valley View Medical Center,Radiologic Technologist,Evening,14:00,22:00,2,6
+HOSP_019,Valley View Medical Center,Radiologic Technologist,Night,22:00,06:00,2,6
+HOSP_019,Valley View Medical Center,Pharmacist,Morning,06:00,14:00,4,12
+HOSP_019,Valley View Medical Center,Pharmacist,Evening,14:00,22:00,3,12
+HOSP_019,Valley View Medical Center,Pharmacist,Night,22:00,06:00,3,12
+HOSP_019,Valley View Medical Center,Respiratory Therapist,Morning,06:00,14:00,4,12
+HOSP_019,Valley View Medical Center,Respiratory Therapist,Evening,14:00,22:00,4,12
+HOSP_019,Valley View Medical Center,Respiratory Therapist,Night,22:00,06:00,3,12
+HOSP_019,Valley View Medical Center,Physical Therapist,Morning,06:00,14:00,3,13
+HOSP_019,Valley View Medical Center,Physical Therapist,Evening,14:00,22:00,3,13
+HOSP_019,Valley View Medical Center,Physical Therapist,Night,22:00,06:00,5,13
+HOSP_019,Valley View Medical Center,Administrative Staff,Morning,06:00,14:00,2,10
+HOSP_019,Valley View Medical Center,Administrative Staff,Evening,14:00,22:00,3,10
+HOSP_019,Valley View Medical Center,Administrative Staff,Night,22:00,06:00,4,10
+HOSP_020,Crescent Hills Hospital,Emergency Physician,Morning,06:00,14:00,1,4
+HOSP_020,Crescent Hills Hospital,Emergency Physician,Evening,14:00,22:00,1,4
+HOSP_020,Crescent Hills Hospital,Emergency Physician,Night,22:00,06:00,1,4
+HOSP_020,Crescent Hills Hospital,Surgeon,Morning,06:00,14:00,0,1
+HOSP_020,Crescent Hills Hospital,Surgeon,Evening,14:00,22:00,0,1
+HOSP_020,Crescent Hills Hospital,Surgeon,Night,22:00,06:00,0,1
+HOSP_020,Crescent Hills Hospital,Anesthesiologist,Morning,06:00,14:00,1,4
+HOSP_020,Crescent Hills Hospital,Anesthesiologist,Evening,14:00,22:00,1,4
+HOSP_020,Crescent Hills Hospital,Anesthesiologist,Night,22:00,06:00,1,4
+HOSP_020,Crescent Hills Hospital,Radiologist,Morning,06:00,14:00,1,4
+HOSP_020,Crescent Hills Hospital,Radiologist,Evening,14:00,22:00,1,4
+HOSP_020,Crescent Hills Hospital,Radiologist,Night,22:00,06:00,1,4
+HOSP_020,Crescent Hills Hospital,Cardiologist,Morning,06:00,14:00,1,4
+HOSP_020,Crescent Hills Hospital,Cardiologist,Evening,14:00,22:00,1,4
+HOSP_020,Crescent Hills Hospital,Cardiologist,Night,22:00,06:00,1,4
+HOSP_020,Crescent Hills Hospital,Neurologist,Morning,06:00,14:00,1,3
+HOSP_020,Crescent Hills Hospital,Neurologist,Evening,14:00,22:00,1,3
+HOSP_020,Crescent Hills Hospital,Neurologist,Night,22:00,06:00,0,3
+HOSP_020,Crescent Hills Hospital,Pediatrician,Morning,06:00,14:00,2,6
+HOSP_020,Crescent Hills Hospital,Pediatrician,Evening,14:00,22:00,2,6
+HOSP_020,Crescent Hills Hospital,Pediatrician,Night,22:00,06:00,2,6
+HOSP_020,Crescent Hills Hospital,General Practitioner,Morning,06:00,14:00,0,3
+HOSP_020,Crescent Hills Hospital,General Practitioner,Evening,14:00,22:00,1,3
+HOSP_020,Crescent Hills Hospital,General Practitioner,Night,22:00,06:00,1,3
+HOSP_020,Crescent Hills Hospital,ICU Nurse,Morning,06:00,14:00,4,10
+HOSP_020,Crescent Hills Hospital,ICU Nurse,Evening,14:00,22:00,3,10
+HOSP_020,Crescent Hills Hospital,ICU Nurse,Night,22:00,06:00,4,10
+HOSP_020,Crescent Hills Hospital,Emergency Nurse,Morning,06:00,14:00,6,18
+HOSP_020,Crescent Hills Hospital,Emergency Nurse,Evening,14:00,22:00,5,18
+HOSP_020,Crescent Hills Hospital,Emergency Nurse,Night,22:00,06:00,4,18
+HOSP_020,Crescent Hills Hospital,Surgical Nurse,Morning,06:00,14:00,3,9
+HOSP_020,Crescent Hills Hospital,Surgical Nurse,Evening,14:00,22:00,3,9
+HOSP_020,Crescent Hills Hospital,Surgical Nurse,Night,22:00,06:00,2,9
+HOSP_020,Crescent Hills Hospital,General Nurse,Morning,06:00,14:00,4,13
+HOSP_020,Crescent Hills Hospital,General Nurse,Evening,14:00,22:00,5,13
+HOSP_020,Crescent Hills Hospital,General Nurse,Night,22:00,06:00,5,13
+HOSP_020,Crescent Hills Hospital,Lab Technician,Morning,06:00,14:00,2,8
+HOSP_020,Crescent Hills Hospital,Lab Technician,Evening,14:00,22:00,3,8
+HOSP_020,Crescent Hills Hospital,Lab Technician,Night,22:00,06:00,2,8
+HOSP_020,Crescent Hills Hospital,Radiologic Technologist,Morning,06:00,14:00,0,1
+HOSP_020,Crescent Hills Hospital,Radiologic Technologist,Evening,14:00,22:00,0,1
+HOSP_020,Crescent Hills Hospital,Radiologic Technologist,Night,22:00,06:00,0,1
+HOSP_020,Crescent Hills Hospital,Pharmacist,Morning,06:00,14:00,1,3
+HOSP_020,Crescent Hills Hospital,Pharmacist,Evening,14:00,22:00,1,3
+HOSP_020,Crescent Hills Hospital,Pharmacist,Night,22:00,06:00,0,3
+HOSP_020,Crescent Hills Hospital,Respiratory Therapist,Morning,06:00,14:00,1,4
+HOSP_020,Crescent Hills Hospital,Respiratory Therapist,Evening,14:00,22:00,1,4
+HOSP_020,Crescent Hills Hospital,Respiratory Therapist,Night,22:00,06:00,1,4
+HOSP_020,Crescent Hills Hospital,Physical Therapist,Morning,06:00,14:00,2,6
+HOSP_020,Crescent Hills Hospital,Physical Therapist,Evening,14:00,22:00,2,6
+HOSP_020,Crescent Hills Hospital,Physical Therapist,Night,22:00,06:00,2,6
+HOSP_020,Crescent Hills Hospital,Administrative Staff,Morning,06:00,14:00,1,4
+HOSP_020,Crescent Hills Hospital,Administrative Staff,Evening,14:00,22:00,1,4
+HOSP_020,Crescent Hills Hospital,Administrative Staff,Night,22:00,06:00,1,4

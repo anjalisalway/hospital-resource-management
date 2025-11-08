@@ -1,0 +1,21 @@
+hospital_id,hospital_name,latitude,longitude,address,hospital_size,total_bed_capacity,operational_hours,emergency_services,trauma_level,last_updated
+HOSP_001,City General Hospital,40.758,-73.9855,"3630 Medical Pkwy, City, ST 85679",small,82,24/7,Yes,Level I,2025-11-08T18:40:18.124668
+HOSP_002,St. Mary's Medical Center,40.7489,-73.968,"5465 Medical Pkwy, City, ST 55311",medium,281,24/7,Yes,Level II,2025-11-08T18:40:18.124780
+HOSP_003,Riverside Community Hospital,40.7614,-73.9776,"4797 Medical Pkwy, City, ST 21840",large,408,24/7,Yes,Level II,2025-11-08T18:40:18.124866
+HOSP_004,Memorial Healthcare Center,40.7505,-73.9934,"1386 Medical Pkwy, City, ST 82774",large,467,24/7,Yes,Level I,2025-11-08T18:40:18.124948
+HOSP_005,Metropolitan Hospital,40.7738,-73.9524,"3814 Medical Pkwy, City, ST 82193",large,497,24/7,Yes,Level I,2025-11-08T18:40:18.125024
+HOSP_006,Lakeside Medical Center,40.741,-73.9937,"3041 Medical Pkwy, City, ST 93449",medium,213,24/7,Yes,Level I,2025-11-08T18:40:18.125104
+HOSP_007,Northern Regional Hospital,40.7831,-73.9712,"2034 Medical Pkwy, City, ST 25821",small,83,24/7,Yes,Level I,2025-11-08T18:40:18.125206
+HOSP_008,Sunset Valley Hospital,40.7364,-73.9808,"7147 Medical Pkwy, City, ST 19773",medium,243,24/7,Yes,Level III,2025-11-08T18:40:18.125285
+HOSP_009,Parkview Medical Complex,40.769,-73.9595,"4280 Medical Pkwy, City, ST 26257",large,300,24/7,Yes,Level II,2025-11-08T18:40:18.125380
+HOSP_010,Eastside General Hospital,40.7529,-73.954,"3283 Medical Pkwy, City, ST 26599",large,394,24/7,Yes,Level I,2025-11-08T18:40:18.125457
+HOSP_011,Westbrook Health Center,40.7456,-74.0047,"9496 Medical Pkwy, City, ST 38386",medium,206,24/7,Yes,Level I,2025-11-08T18:40:18.125534
+HOSP_012,Highland Medical Institute,40.7789,-73.982,"7715 Medical Pkwy, City, ST 32207",small,136,24/7,Yes,Level I,2025-11-08T18:40:18.125609
+HOSP_013,Oakwood Community Hospital,40.7382,-73.973,"7259 Medical Pkwy, City, ST 34541",large,378,24/7,Yes,Level II,2025-11-08T18:40:18.125686
+HOSP_014,Central Care Hospital,40.7555,-73.9733,"3226 Medical Pkwy, City, ST 64133",small,115,24/7,Yes,Level III,2025-11-08T18:40:18.125769
+HOSP_015,Greenfield Medical Center,40.7658,-73.991,"3369 Medical Pkwy, City, ST 95756",medium,200,24/7,Yes,Level II,2025-11-08T18:40:18.125844
+HOSP_016,Harborview Hospital,40.7421,-73.9568,"644 Medical Pkwy, City, ST 51792",large,410,24/7,Yes,Level III,2025-11-08T18:40:18.125918
+HOSP_017,Summit Regional Medical,40.7712,-73.9651,"4071 Medical Pkwy, City, ST 19198",small,137,24/7,Yes,Level III,2025-11-08T18:40:18.125990
+HOSP_018,Bay Area Hospital,40.7345,-73.9889,"5654 Medical Pkwy, City, ST 60445",medium,207,24/7,Yes,Level II,2025-11-08T18:40:18.126062
+HOSP_019,Valley View Medical Center,40.7601,-73.9845,"2874 Medical Pkwy, City, ST 55690",large,485,24/7,Yes,Level I,2025-11-08T18:40:18.126136
+HOSP_020,Crescent Hills Hospital,40.7478,-73.9712,"7614 Medical Pkwy, City, ST 19401",small,100,24/7,Yes,Level II,2025-11-08T18:40:18.126207

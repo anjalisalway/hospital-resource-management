@@ -1,0 +1,121 @@
+hospital_id,hospital_name,department_name,bed_count,occupancy_rate
+HOSP_001,City General Hospital,Emergency,12,88.21
+HOSP_001,City General Hospital,ICU,8,80.31
+HOSP_001,City General Hospital,General Ward,32,54.66
+HOSP_001,City General Hospital,Surgical,12,52.31
+HOSP_001,City General Hospital,Pediatric,8,60.58
+HOSP_001,City General Hospital,Maternity,8,75.1
+HOSP_002,St. Mary's Medical Center,Emergency,42,83.45
+HOSP_002,St. Mary's Medical Center,ICU,28,81.29
+HOSP_002,St. Mary's Medical Center,General Ward,112,71.89
+HOSP_002,St. Mary's Medical Center,Surgical,42,48.15
+HOSP_002,St. Mary's Medical Center,Pediatric,28,48.95
+HOSP_002,St. Mary's Medical Center,Maternity,28,78.18
+HOSP_003,Riverside Community Hospital,Emergency,61,61.78
+HOSP_003,Riverside Community Hospital,ICU,40,91.67
+HOSP_003,Riverside Community Hospital,General Ward,163,68.57
+HOSP_003,Riverside Community Hospital,Surgical,61,41.93
+HOSP_003,Riverside Community Hospital,Pediatric,40,58.2
+HOSP_003,Riverside Community Hospital,Maternity,40,67.46
+HOSP_004,Memorial Healthcare Center,Emergency,70,89.06
+HOSP_004,Memorial Healthcare Center,ICU,46,89.79
+HOSP_004,Memorial Healthcare Center,General Ward,186,78.4
+HOSP_004,Memorial Healthcare Center,Surgical,70,61.54
+HOSP_004,Memorial Healthcare Center,Pediatric,46,74.75
+HOSP_004,Memorial Healthcare Center,Maternity,46,53.94
+HOSP_005,Metropolitan Hospital,Emergency,74,83.9
+HOSP_005,Metropolitan Hospital,ICU,49,93.56
+HOSP_005,Metropolitan Hospital,General Ward,198,56.58
+HOSP_005,Metropolitan Hospital,Surgical,74,66.66
+HOSP_005,Metropolitan Hospital,Pediatric,49,60.22
+HOSP_005,Metropolitan Hospital,Maternity,49,69.66
+HOSP_006,Lakeside Medical Center,Emergency,31,89.66
+HOSP_006,Lakeside Medical Center,ICU,21,84.41
+HOSP_006,Lakeside Medical Center,General Ward,85,79.4
+HOSP_006,Lakeside Medical Center,Surgical,31,78.74
+HOSP_006,Lakeside Medical Center,Pediatric,21,63.69
+HOSP_006,Lakeside Medical Center,Maternity,21,53.58
+HOSP_007,Northern Regional Hospital,Emergency,12,75.67
+HOSP_007,Northern Regional Hospital,ICU,8,75.71
+HOSP_007,Northern Regional Hospital,General Ward,33,79.03
+HOSP_007,Northern Regional Hospital,Surgical,12,59.43
+HOSP_007,Northern Regional Hospital,Pediatric,8,49.33
+HOSP_007,Northern Regional Hospital,Maternity,8,74.54
+HOSP_008,Sunset Valley Hospital,Emergency,36,91.26
+HOSP_008,Sunset Valley Hospital,ICU,24,94.65
+HOSP_008,Sunset Valley Hospital,General Ward,97,54.92
+HOSP_008,Sunset Valley Hospital,Surgical,36,72.13
+HOSP_008,Sunset Valley Hospital,Pediatric,24,58.43
+HOSP_008,Sunset Valley Hospital,Maternity,24,59.43
+HOSP_009,Parkview Medical Complex,Emergency,45,66.63
+HOSP_009,Parkview Medical Complex,ICU,30,94.35
+HOSP_009,Parkview Medical Complex,General Ward,120,65.27
+HOSP_009,Parkview Medical Complex,Surgical,45,72.82
+HOSP_009,Parkview Medical Complex,Pediatric,30,45.21
+HOSP_009,Parkview Medical Complex,Maternity,30,74.4
+HOSP_010,Eastside General Hospital,Emergency,59,81.22
+HOSP_010,Eastside General Hospital,ICU,39,70.67
+HOSP_010,Eastside General Hospital,General Ward,157,75.73
+HOSP_010,Eastside General Hospital,Surgical,59,50.92
+HOSP_010,Eastside General Hospital,Pediatric,39,65.19
+HOSP_010,Eastside General Hospital,Maternity,39,56.33
+HOSP_011,Westbrook Health Center,Emergency,30,84.47
+HOSP_011,Westbrook Health Center,ICU,20,73.52
+HOSP_011,Westbrook Health Center,General Ward,82,68.8
+HOSP_011,Westbrook Health Center,Surgical,30,68.62
+HOSP_011,Westbrook Health Center,Pediatric,20,65.02
+HOSP_011,Westbrook Health Center,Maternity,20,58.55
+HOSP_012,Highland Medical Institute,Emergency,20,77.6
+HOSP_012,Highland Medical Institute,ICU,13,70.82
+HOSP_012,Highland Medical Institute,General Ward,54,68.02
+HOSP_012,Highland Medical Institute,Surgical,20,47.8
+HOSP_012,Highland Medical Institute,Pediatric,13,51.58
+HOSP_012,Highland Medical Institute,Maternity,13,57.57
+HOSP_013,Oakwood Community Hospital,Emergency,56,91.38
+HOSP_013,Oakwood Community Hospital,ICU,37,82.34
+HOSP_013,Oakwood Community Hospital,General Ward,151,81.95
+HOSP_013,Oakwood Community Hospital,Surgical,56,70.08
+HOSP_013,Oakwood Community Hospital,Pediatric,37,72.17
+HOSP_013,Oakwood Community Hospital,Maternity,37,68.9
+HOSP_014,Central Care Hospital,Emergency,17,88.68
+HOSP_014,Central Care Hospital,ICU,11,89.98
+HOSP_014,Central Care Hospital,General Ward,46,59.48
+HOSP_014,Central Care Hospital,Surgical,17,53.06
+HOSP_014,Central Care Hospital,Pediatric,11,73.88
+HOSP_014,Central Care Hospital,Maternity,11,66.83
+HOSP_015,Greenfield Medical Center,Emergency,30,90.88
+HOSP_015,Greenfield Medical Center,ICU,20,88.26
+HOSP_015,Greenfield Medical Center,General Ward,80,57.25
+HOSP_015,Greenfield Medical Center,Surgical,30,70.18
+HOSP_015,Greenfield Medical Center,Pediatric,20,74.04
+HOSP_015,Greenfield Medical Center,Maternity,20,69.1
+HOSP_016,Harborview Hospital,Emergency,61,92.35
+HOSP_016,Harborview Hospital,ICU,41,75.64
+HOSP_016,Harborview Hospital,General Ward,164,60.03
+HOSP_016,Harborview Hospital,Surgical,61,63.99
+HOSP_016,Harborview Hospital,Pediatric,41,62.96
+HOSP_016,Harborview Hospital,Maternity,41,58.86
+HOSP_017,Summit Regional Medical,Emergency,20,85.8
+HOSP_017,Summit Regional Medical,ICU,13,87.16
+HOSP_017,Summit Regional Medical,General Ward,54,84.27
+HOSP_017,Summit Regional Medical,Surgical,20,77.67
+HOSP_017,Summit Regional Medical,Pediatric,13,58.89
+HOSP_017,Summit Regional Medical,Maternity,13,51.28
+HOSP_018,Bay Area Hospital,Emergency,31,75.05
+HOSP_018,Bay Area Hospital,ICU,20,76.29
+HOSP_018,Bay Area Hospital,General Ward,82,62.83
+HOSP_018,Bay Area Hospital,Surgical,31,43.89
+HOSP_018,Bay Area Hospital,Pediatric,20,55.37
+HOSP_018,Bay Area Hospital,Maternity,20,75.33
+HOSP_019,Valley View Medical Center,Emergency,72,72.47
+HOSP_019,Valley View Medical Center,ICU,48,89.58
+HOSP_019,Valley View Medical Center,General Ward,194,58.34
+HOSP_019,Valley View Medical Center,Surgical,72,45.37
+HOSP_019,Valley View Medical Center,Pediatric,48,67.25
+HOSP_019,Valley View Medical Center,Maternity,48,61.31
+HOSP_020,Crescent Hills Hospital,Emergency,15,92.1
+HOSP_020,Crescent Hills Hospital,ICU,10,73.76
+HOSP_020,Crescent Hills Hospital,General Ward,40,62.25
+HOSP_020,Crescent Hills Hospital,Surgical,15,56.4
+HOSP_020,Crescent Hills Hospital,Pediatric,10,47.29
+HOSP_020,Crescent Hills Hospital,Maternity,10,68.22

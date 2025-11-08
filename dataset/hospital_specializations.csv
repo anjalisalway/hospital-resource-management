@@ -1,0 +1,93 @@
+hospital_id,hospital_name,specialization
+HOSP_001,City General Hospital,Orthopedics
+HOSP_001,City General Hospital,Neurology
+HOSP_001,City General Hospital,Obstetrics
+HOSP_001,City General Hospital,Emergency Medicine
+HOSP_001,City General Hospital,Surgery
+HOSP_002,St. Mary's Medical Center,Oncology
+HOSP_002,St. Mary's Medical Center,Surgery
+HOSP_002,St. Mary's Medical Center,Pediatrics
+HOSP_003,Riverside Community Hospital,Surgery
+HOSP_003,Riverside Community Hospital,Obstetrics
+HOSP_003,Riverside Community Hospital,Pediatrics
+HOSP_003,Riverside Community Hospital,Oncology
+HOSP_003,Riverside Community Hospital,Cardiology
+HOSP_003,Riverside Community Hospital,Neurology
+HOSP_004,Memorial Healthcare Center,Cardiology
+HOSP_004,Memorial Healthcare Center,Pediatrics
+HOSP_004,Memorial Healthcare Center,Oncology
+HOSP_004,Memorial Healthcare Center,Neurology
+HOSP_004,Memorial Healthcare Center,Obstetrics
+HOSP_005,Metropolitan Hospital,Oncology
+HOSP_005,Metropolitan Hospital,Surgery
+HOSP_005,Metropolitan Hospital,Orthopedics
+HOSP_005,Metropolitan Hospital,Emergency Medicine
+HOSP_005,Metropolitan Hospital,Obstetrics
+HOSP_006,Lakeside Medical Center,Cardiology
+HOSP_006,Lakeside Medical Center,Oncology
+HOSP_006,Lakeside Medical Center,Neurology
+HOSP_006,Lakeside Medical Center,Surgery
+HOSP_006,Lakeside Medical Center,Orthopedics
+HOSP_006,Lakeside Medical Center,Obstetrics
+HOSP_007,Northern Regional Hospital,Orthopedics
+HOSP_007,Northern Regional Hospital,Surgery
+HOSP_007,Northern Regional Hospital,Pediatrics
+HOSP_007,Northern Regional Hospital,Oncology
+HOSP_007,Northern Regional Hospital,Emergency Medicine
+HOSP_007,Northern Regional Hospital,Obstetrics
+HOSP_008,Sunset Valley Hospital,Oncology
+HOSP_008,Sunset Valley Hospital,Emergency Medicine
+HOSP_008,Sunset Valley Hospital,Neurology
+HOSP_008,Sunset Valley Hospital,Obstetrics
+HOSP_008,Sunset Valley Hospital,Pediatrics
+HOSP_008,Sunset Valley Hospital,Orthopedics
+HOSP_009,Parkview Medical Complex,Neurology
+HOSP_009,Parkview Medical Complex,Obstetrics
+HOSP_009,Parkview Medical Complex,Pediatrics
+HOSP_010,Eastside General Hospital,Emergency Medicine
+HOSP_010,Eastside General Hospital,Obstetrics
+HOSP_010,Eastside General Hospital,Oncology
+HOSP_010,Eastside General Hospital,Surgery
+HOSP_010,Eastside General Hospital,Cardiology
+HOSP_010,Eastside General Hospital,Pediatrics
+HOSP_011,Westbrook Health Center,Oncology
+HOSP_011,Westbrook Health Center,Emergency Medicine
+HOSP_011,Westbrook Health Center,Cardiology
+HOSP_011,Westbrook Health Center,Obstetrics
+HOSP_011,Westbrook Health Center,Neurology
+HOSP_012,Highland Medical Institute,Pediatrics
+HOSP_012,Highland Medical Institute,Orthopedics
+HOSP_012,Highland Medical Institute,Emergency Medicine
+HOSP_013,Oakwood Community Hospital,Obstetrics
+HOSP_013,Oakwood Community Hospital,Orthopedics
+HOSP_013,Oakwood Community Hospital,Surgery
+HOSP_013,Oakwood Community Hospital,Emergency Medicine
+HOSP_014,Central Care Hospital,Cardiology
+HOSP_014,Central Care Hospital,Surgery
+HOSP_014,Central Care Hospital,Neurology
+HOSP_015,Greenfield Medical Center,Obstetrics
+HOSP_015,Greenfield Medical Center,Emergency Medicine
+HOSP_015,Greenfield Medical Center,Oncology
+HOSP_015,Greenfield Medical Center,Neurology
+HOSP_015,Greenfield Medical Center,Cardiology
+HOSP_015,Greenfield Medical Center,Surgery
+HOSP_016,Harborview Hospital,Emergency Medicine
+HOSP_016,Harborview Hospital,Surgery
+HOSP_016,Harborview Hospital,Orthopedics
+HOSP_016,Harborview Hospital,Cardiology
+HOSP_017,Summit Regional Medical,Pediatrics
+HOSP_017,Summit Regional Medical,Surgery
+HOSP_017,Summit Regional Medical,Orthopedics
+HOSP_017,Summit Regional Medical,Neurology
+HOSP_018,Bay Area Hospital,Pediatrics
+HOSP_018,Bay Area Hospital,Cardiology
+HOSP_018,Bay Area Hospital,Oncology
+HOSP_018,Bay Area Hospital,Surgery
+HOSP_019,Valley View Medical Center,Oncology
+HOSP_019,Valley View Medical Center,Surgery
+HOSP_019,Valley View Medical Center,Cardiology
+HOSP_020,Crescent Hills Hospital,Cardiology
+HOSP_020,Crescent Hills Hospital,Oncology
+HOSP_020,Crescent Hills Hospital,Orthopedics
+HOSP_020,Crescent Hills Hospital,Obstetrics
+HOSP_020,Crescent Hills Hospital,Surgery
