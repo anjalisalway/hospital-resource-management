@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-from typing import TypedDict, List, Dict
+from typing import TypedDict, List, Dict, Literal
 from langchain_groq import ChatGroq
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
@@ -8,6 +8,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 import pandas as pd
 from dotenv import load_dotenv
+from langgraph.graph import StateGraph, START, END
 
 st.set_page_config(
     page_title="Hospital Resource Management",
@@ -17,16 +18,14 @@ st.set_page_config(
 load_dotenv()
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
+
 class AgentState(TypedDict):
     task: str
-    data_path: str
-    vectorstore: any
     recommendations: str
     predictions: str
     query: str
     response: str
-    history: list
-    raw_data: Dict[str, pd.DataFrame]
+    error: str
 
 if 'vectorstore' not in st.session_state:
     st.session_state.vectorstore = None
@@ -40,11 +39,12 @@ if 'chat_history' not in st.session_state:
     st.session_state.chat_history = []
 if 'data_loaded' not in st.session_state:
     st.session_state.data_loaded = False
+if 'graph' not in st.session_state:
+    st.session_state.graph = None
 
 @st.cache_resource
 def get_llm():
     return ChatGroq(model="llama-3.3-70b-versatile", temperature=0.2)
-
 
 def get_hospital_data(hospital_name: str, raw_data: Dict[str, pd.DataFrame]) -> Dict:
     """Extract comprehensive data for a specific hospital"""
@@ -122,45 +122,52 @@ def ingest_data_node(state: AgentState) -> AgentState:
     ]
     
     all_docs = []
-    loaded_files = []
     raw_data = {}
     
-    for file in csv_files:
-        try:
-            df = pd.read_csv(f"dataset/{file}")
-            file_key = file.replace('.csv', '')
-            raw_data[file_key] = df
-            
-            for idx, row in df.iterrows():
-                content = f"File: {file}\n" + "\n".join([f"{col}: {val}" for col, val in row.items()])
-                all_docs.append(Document(page_content=content, metadata={"source": file, "row": idx}))
-            loaded_files.append(file)
-        except Exception as e:
-            st.warning(f"Could not load {file}: {e}")
+    try:
+        for file in csv_files:
+            try:
+                df = pd.read_csv(f"dataset/{file}")
+                file_key = file.replace('.csv', '')
+                raw_data[file_key] = df
+                
+                for idx, row in df.iterrows():
+                    content = f"File: {file}\n" + "\n".join([f"{col}: {val}" for col, val in row.items()])
+                    all_docs.append(Document(page_content=content, metadata={"source": file, "row": idx}))
+            except Exception as e:
+                state["error"] = f"Could not load {file}: {e}"
+        
+        if not all_docs:
+            state["error"] = "No data could be loaded. Please check your dataset folder."
+            return state
+        
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+        splits = text_splitter.split_documents(all_docs)
+        embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+        vectorstore = FAISS.from_documents(splits, embeddings)
+        
+        # Store in session state
+        st.session_state.vectorstore = vectorstore
+        st.session_state.raw_data = raw_data
+        st.session_state.data_loaded = True
+        
+        state["error"] = ""
+        
+    except Exception as e:
+        state["error"] = f"Error during data ingestion: {e}"
     
-    if not all_docs:
-        st.error("No data could be loaded. Please check your dataset folder.")
-        return state
-    
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
-    splits = text_splitter.split_documents(all_docs)
-    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-    vectorstore = FAISS.from_documents(splits, embeddings)
-    
-    state["vectorstore"] = vectorstore
-    state["raw_data"] = raw_data
-    
-    st.success(f"✅ Successfully loaded {len(loaded_files)} files and indexed {len(splits)} document chunks")
     return state
 
 def recommendations_node(state: AgentState) -> AgentState:
     """Generate resource allocation recommendations"""
-    llm = get_llm()
-    retriever = state["vectorstore"].as_retriever(search_kwargs={"k": 15})
-    docs = retriever.invoke("resource allocation staff equipment occupancy alerts shortage critical high")
-    context = "\n\n".join([doc.page_content for doc in docs])
-    
-    prompt = f"""You are a hospital operations analyst. Provide CONCISE recommendations.
+    try:
+        llm = get_llm()
+        vectorstore = st.session_state.vectorstore
+        retriever = vectorstore.as_retriever(search_kwargs={"k": 15})
+        docs = retriever.invoke("resource allocation staff equipment occupancy alerts shortage critical high")
+        context = "\n\n".join([doc.page_content for doc in docs])
+        
+        prompt = f"""You are a hospital operations analyst. Provide CONCISE recommendations.
 
 DATA:
 {context}
@@ -174,20 +181,25 @@ Impact: [Expected improvement]
 Timeline: [When to implement]
 
 Keep each recommendation to 3-4 lines. Be specific with numbers."""
+        
+        response = llm.invoke(prompt)
+        state["recommendations"] = response.content
+        state["error"] = ""
+    except Exception as e:
+        state["error"] = f"Error generating recommendations: {e}"
     
-    response = llm.invoke(prompt)
-    state["recommendations"] = response.content
     return state
-
 
 def predictions_node(state: AgentState) -> AgentState:
     """Make predictions based on historical data"""
-    llm = get_llm()
-    retriever = state["vectorstore"].as_retriever(search_kwargs={"k": 15})
-    docs = retriever.invoke("staff shifts equipment occupancy rate alerts trends patterns utilization")
-    context = "\n\n".join([doc.page_content for doc in docs])
-    
-    prompt = f"""You are a healthcare analytics expert. Provide CONCISE predictions.
+    try:
+        llm = get_llm()
+        vectorstore = st.session_state.vectorstore
+        retriever = vectorstore.as_retriever(search_kwargs={"k": 15})
+        docs = retriever.invoke("staff shifts equipment occupancy rate alerts trends patterns utilization")
+        context = "\n\n".join([doc.page_content for doc in docs])
+        
+        prompt = f"""You are a healthcare analytics expert. Provide CONCISE predictions.
 
 DATA:
 {context}
@@ -201,119 +213,122 @@ Why: [One sentence explaining reason]
 Action: [What to do now to prevent it]
 
 Keep each prediction to 3-4 lines. Be specific with numbers and probabilities."""
+        
+        response = llm.invoke(prompt)
+        state["predictions"] = response.content
+        state["error"] = ""
+    except Exception as e:
+        state["error"] = f"Error generating predictions: {e}"
     
-    response = llm.invoke(prompt)
-    state["predictions"] = response.content
     return state
-
 
 def chatbot_node(state: AgentState) -> AgentState:
     """Handle complex queries with structured decision-making"""
-    llm = get_llm()
-    query = state["query"]
-    raw_data = state.get("raw_data", {})
-    
-    hospital_name = None
-    query_lower = query.lower()
-    
-    if raw_data and 'hospitals' in raw_data:
-        for hosp_name in raw_data['hospitals']['hospital_name'].values:
-            if hosp_name.lower() in query_lower:
-                hospital_name = hosp_name
-                break
- 
-    hospital_data = {}
-    nearby_hospitals = []
-    if hospital_name and raw_data:
-        hospital_data = get_hospital_data(hospital_name, raw_data)
-        if hospital_data.get('hospital_info'):
-            hospital_id = hospital_data['hospital_info'].get('hospital_id')
-            nearby_hospitals = find_nearby_hospitals(hospital_id, raw_data)
-    
-    query_type = "general"
-    
-    info_query_patterns = [
-        "how many", "how much", "what is", "what are", "list", "show me",
-        "tell me about", "which", "who", "when", "where"
-    ]
-    is_simple_info = any(pattern in query_lower for pattern in info_query_patterns)
-    
-    if any(kw in query_lower for kw in ["day off", "leave", "time off", "absence", "vacation", "sick"]):
-        query_type = "scheduling"
-    elif any(kw in query_lower for kw in ["transfer", "move", "reallocate", "share", "borrow", "loan"]):
-        query_type = "reallocation"
-    elif any(kw in query_lower for kw in ["should", "approve", "deny", "recommend", "suggest", "decision"]):
-        query_type = "decision"
-    elif is_simple_info:
-        query_type = "simple_info"
-    
-    context_parts = []
-    
-    if hospital_data:
-        context_parts.append(f"=== HOSPITAL DATA FOR {hospital_name} ===")
+    try:
+        llm = get_llm()
+        query = state["query"]
+        raw_data = st.session_state.raw_data
         
-        hosp_info = hospital_data.get('hospital_info', {})
-        context_parts.append(f"\nHOSPITAL: {hosp_info.get('hospital_name')} ({hosp_info.get('hospital_id')})")
-        context_parts.append(f"Size: {hosp_info.get('hospital_size')} | Beds: {hosp_info.get('total_bed_capacity')} | Trauma: {hosp_info.get('trauma_level')}")
+        hospital_name = None
+        query_lower = query.lower()
         
-        depts = hospital_data.get('departments', [])
-        if depts:
-            context_parts.append(f"\nDEPARTMENTS ({len(depts)}):")
-            for dept in depts:
-                context_parts.append(f"  {dept['department_name']}: {dept['bed_count']} beds, {dept['occupancy_rate']}% occupied")
+        if raw_data and 'hospitals' in raw_data:
+            for hosp_name in raw_data['hospitals']['hospital_name'].values:
+                if hosp_name.lower() in query_lower:
+                    hospital_name = hosp_name
+                    break
+     
+        hospital_data = {}
+        nearby_hospitals = []
+        if hospital_name and raw_data:
+            hospital_data = get_hospital_data(hospital_name, raw_data)
+            if hospital_data.get('hospital_info'):
+                hospital_id = hospital_data['hospital_info'].get('hospital_id')
+                nearby_hospitals = find_nearby_hospitals(hospital_id, raw_data)
         
-        equipment = hospital_data.get('equipment', [])
-        if equipment:
-            relevant_equip = equipment
-            query_lower = query.lower()
-            equipment_keywords = ['ventilator', 'wheelchair', 'stretcher', 'bed', 'mri', 'ct', 'xray', 'ultrasound']
-            found_keyword = next((kw for kw in equipment_keywords if kw in query_lower), None)
+        query_type = "general"
+        
+        info_query_patterns = [
+            "how many", "how much", "what is", "what are", "list", "show me",
+            "tell me about", "which", "who", "when", "where"
+        ]
+        is_simple_info = any(pattern in query_lower for pattern in info_query_patterns)
+        
+        if any(kw in query_lower for kw in ["day off", "leave", "time off", "absence", "vacation", "sick"]):
+            query_type = "scheduling"
+        elif any(kw in query_lower for kw in ["transfer", "move", "reallocate", "share", "borrow", "loan"]):
+            query_type = "reallocation"
+        elif any(kw in query_lower for kw in ["should", "approve", "deny", "recommend", "suggest", "decision"]):
+            query_type = "decision"
+        elif is_simple_info:
+            query_type = "simple_info"
+        
+        context_parts = []
+        
+        if hospital_data:
+            context_parts.append(f"=== HOSPITAL DATA FOR {hospital_name} ===")
             
-            if found_keyword:
-                relevant_equip = [e for e in equipment if found_keyword in e['equipment_type'].lower()]
+            hosp_info = hospital_data.get('hospital_info', {})
+            context_parts.append(f"\nHOSPITAL: {hosp_info.get('hospital_name')} ({hosp_info.get('hospital_id')})")
+            context_parts.append(f"Size: {hosp_info.get('hospital_size')} | Beds: {hosp_info.get('total_bed_capacity')} | Trauma: {hosp_info.get('trauma_level')}")
             
-            relevant_equip = relevant_equip[:10]
+            depts = hospital_data.get('departments', [])
+            if depts:
+                context_parts.append(f"\nDEPARTMENTS ({len(depts)}):")
+                for dept in depts:
+                    context_parts.append(f"  {dept['department_name']}: {dept['bed_count']} beds, {dept['occupancy_rate']}% occupied")
             
-            context_parts.append(f"\nEQUIPMENT (showing {len(relevant_equip)} relevant):")
-            for equip in relevant_equip:
-                context_parts.append(f"  {equip['equipment_type']}: Total={equip['total_quantity']}, Available={equip['available_quantity']}, InUse={equip['in_use_quantity']}, Maintenance={equip['maintenance_quantity']}")
+            equipment = hospital_data.get('equipment', [])
+            if equipment:
+                relevant_equip = equipment
+                equipment_keywords = ['ventilator', 'wheelchair', 'stretcher', 'bed', 'mri', 'ct', 'xray', 'ultrasound']
+                found_keyword = next((kw for kw in equipment_keywords if kw in query_lower), None)
+                
+                if found_keyword:
+                    relevant_equip = [e for e in equipment if found_keyword in e['equipment_type'].lower()]
+                
+                relevant_equip = relevant_equip[:10]
+                
+                context_parts.append(f"\nEQUIPMENT (showing {len(relevant_equip)} relevant):")
+                for equip in relevant_equip:
+                    context_parts.append(f"  {equip['equipment_type']}: Total={equip['total_quantity']}, Available={equip['available_quantity']}, InUse={equip['in_use_quantity']}, Maintenance={equip['maintenance_quantity']}")
+            
+            staff_shifts = hospital_data.get('staff_shifts', [])
+            if staff_shifts:
+                relevant_staff = staff_shifts
+                role_keywords = ['nurse', 'physician', 'doctor', 'surgeon', 'technician', 'therapist']
+                found_role = next((kw for kw in role_keywords if kw in query_lower), None)
+                
+                if found_role:
+                    relevant_staff = [s for s in staff_shifts if found_role in s['staff_role'].lower()]
+                relevant_staff = relevant_staff[:15]
+                
+                context_parts.append(f"\nSTAFF & SHIFTS (showing {len(relevant_staff)} relevant):")
+                for staff in relevant_staff:
+                    context_parts.append(f"  {staff['staff_role']} - {staff['shift_name']}: {staff['staff_count']} on shift (total: {staff['total_staff_in_role']})")
+            
+            alerts = hospital_data.get('alerts', [])
+            if alerts:
+                context_parts.append(f"\nACTIVE ALERTS ({len(alerts)}):")
+                for alert in alerts:
+                    context_parts.append(f"  [{alert['severity']}] {alert['alert_type']}: {alert['alert_message']}")
+            
+            if nearby_hospitals:
+                context_parts.append(f"\n=== NEARBY HOSPITALS ({len(nearby_hospitals[:3])} shown) ===")
+                for hosp in nearby_hospitals[:3]:
+                    context_parts.append(f"{hosp['hospital_name']} - {hosp['hospital_size']}, {hosp['total_bed_capacity']} beds, ~{hosp['distance']:.3f}° away")
         
-        staff_shifts = hospital_data.get('staff_shifts', [])
-        if staff_shifts:
-            relevant_staff = staff_shifts
-            role_keywords = ['nurse', 'physician', 'doctor', 'surgeon', 'technician', 'therapist']
-            found_role = next((kw for kw in role_keywords if kw in query_lower), None)
-            
-            if found_role:
-                relevant_staff = [s for s in staff_shifts if found_role in s['staff_role'].lower()]
-            relevant_staff = relevant_staff[:15]
-            
-            context_parts.append(f"\nSTAFF & SHIFTS (showing {len(relevant_staff)} relevant):")
-            for staff in relevant_staff:
-                context_parts.append(f"  {staff['staff_role']} - {staff['shift_name']}: {staff['staff_count']} on shift (total: {staff['total_staff_in_role']})")
+        retriever = st.session_state.vectorstore.as_retriever(search_kwargs={"k": 5})
+        docs = retriever.invoke(query)
+        context_parts.append("\n=== ADDITIONAL RELEVANT DATA ===")
+        for doc in docs:
+            content = doc.page_content[:300] + "..." if len(doc.page_content) > 300 else doc.page_content
+            context_parts.append(content)
         
-        alerts = hospital_data.get('alerts', [])
-        if alerts:
-            context_parts.append(f"\nACTIVE ALERTS ({len(alerts)}):")
-            for alert in alerts:
-                context_parts.append(f"  [{alert['severity']}] {alert['alert_type']}: {alert['alert_message']}")
+        full_context = "\n".join(context_parts)
         
-        if nearby_hospitals:
-            context_parts.append(f"\n=== NEARBY HOSPITALS ({len(nearby_hospitals[:3])} shown) ===")
-            for hosp in nearby_hospitals[:3]:
-                context_parts.append(f"{hosp['hospital_name']} - {hosp['hospital_size']}, {hosp['total_bed_capacity']} beds, ~{hosp['distance']:.3f}° away")
-    
-    retriever = state["vectorstore"].as_retriever(search_kwargs={"k": 5})
-    docs = retriever.invoke(query)
-    context_parts.append("\n=== ADDITIONAL RELEVANT DATA ===")
-    for doc in docs:
-        content = doc.page_content[:300] + "..." if len(doc.page_content) > 300 else doc.page_content
-        context_parts.append(content)
-    
-    full_context = "\n".join(context_parts)
-    
-    if query_type == "scheduling":
-        prompt = f"""You are a hospital operations manager making a scheduling decision.
+        if query_type == "scheduling":
+            prompt = f"""You are a hospital operations manager making a scheduling decision.
 
 DATA:
 {full_context}
@@ -325,45 +340,29 @@ ANALYZE IN 5 STEPS:
 1. CURRENT STATE
 - Role & shift affected
 - Current staff count (exact number)
-- Total in role
-- Department occupancy rates
 
-2. MINIMUM SAFE STAFFING
-- Beds needing coverage
-- Standard ratio for this role
-- Minimum required staff
-- **Can lose 1 staff? YES/NO**
-
-3. RISK ASSESSMENT
+2. RISK ASSESSMENT
 - Patient load
 - New staff-to-patient ratio
 - Risk level (LOW/MEDIUM/HIGH/CRITICAL)
-- Safety impact (1-10)
 
-4. THREE OPTIONS (Name each, provide details)
+3. TWO OPTIONS (Name each, provide details)
 **Option A:**
 Coverage from: [where]
 Cost: [overtime estimate]
-Risk: [1-10]
 Feasibility: [HIGH/MED/LOW]
 
 **Option B:** [similar format]
-**Option C:** [similar format]
 
-5. DECISION: [APPROVE/DENY/CONDITIONAL]
 
-Reasoning: [2-3 sentences]
+4. DECISION: [APPROVE/DENY/CONDITIONAL]
 
-Implementation:
-1. [Immediate action]
-2. [Coverage plan]
-3. [Monitoring]
-4. [Contingency]
+
 
 Be specific with numbers and names."""
 
-    elif query_type == "reallocation":
-        prompt = f"""You are a resource coordinator making transfer decisions.
+        elif query_type == "reallocation":
+            prompt = f"""You are a resource coordinator making transfer decisions.
 
 DATA:
 {full_context}
@@ -376,7 +375,6 @@ ANALYSIS:
 - Target hospital
 - Resource & quantity needed
 - Current availability
-- Urgency (IMMEDIATE/URGENT/PLANNED)
 
 2. SOURCE OPTIONS (Top 3)
 For each nearby hospital:
@@ -384,84 +382,17 @@ For each nearby hospital:
 - Distance & feasibility
 - Risk if transferred
 
-3. TRANSFER LOGISTICS
-- Quantity to transfer
-- Method & time
-- Cost estimate
-- Personnel needed
-
-4. IMPACT
+3. IMPACT
 **Target:** Current → After transfer (improvement)
 **Source:** Remaining surplus, risk level
 
-5. RECOMMENDATION: [Approve/Deny/Alternative]
+4. RECOMMENDATION: [Approve/Deny/Alternative]
 
-Transfer Plan:
-- From/To: [hospitals]
-- Resource: [type + quantity]
-- Timing: [when]
-- Steps: [1-2-3-4]
-
-Monitoring & Contingency: [brief]
 
 Be specific with numbers."""
 
-    elif query_type in ["shortage", "equipment"]:
-        prompt = f"""You are a hospital supply chain expert analyzing resource adequacy.
-
-DATA:
-{full_context}
-
-QUERY: {query}
-
-ANALYSIS:
-
-1. CURRENT STATE
-- Resource type
-- Total/Available/In-use/Maintenance
-- Condition status
-
-2. DEMAND
-- Hospital size & beds
-- Relevant departments
-- Occupancy rates
-- Estimated need
-
-3. ADEQUACY
-- Industry standard ratio
-- Required vs Actual
-- Gap calculation
-- **Status: [SURPLUS/ADEQUATE/INSUFFICIENT/CRITICAL]**
-
-4. RISK
-- If one fails: [impact]
-- If occupancy +10%: [impact]
-- Buffer needed: [X units]
-
-5. PEER COMPARISON
-- Similar hospitals average
-- This hospital position
-- Relative ranking
-
-6. RECOMMENDATIONS
-
-**Immediate (0-24h):**
-1. [Action with numbers]
-2. [Action with numbers]
-
-**Short-term (1-7d):**
-1. [Action]
-
-**Strategic (1-3mo):**
-1. [Long-term solution]
-
-If shortage: Borrow from [hospital], quantity [X]
-If surplus: Can loan to [hospital], quantity [X]
-
-Be specific and quantified."""
-
-    else: 
-        prompt = f"""You are a hospital information assistant. Give SHORT, DIRECT answers.
+        else: 
+            prompt = f"""You are a hospital information assistant. Give SHORT, DIRECT answers.
 
 DATA:
 {full_context}
@@ -480,43 +411,92 @@ Example bad response: Long paragraphs about occupancy, recommendations, etc.
 
 Answer the question directly:"""
 
-    if state.get("recommendations"):
-
-        rec_summary = state["recommendations"][:500] + "..." if len(state["recommendations"]) > 500 else state["recommendations"]
-        prompt += f"\n\nPREVIOUS RECOMMENDATIONS (summary):\n{rec_summary}"
-    if state.get("predictions"):
- 
-        pred_summary = state["predictions"][:500] + "..." if len(state["predictions"]) > 500 else state["predictions"]
-        prompt += f"\n\nPREVIOUS PREDICTIONS (summary):\n{pred_summary}"
+        if st.session_state.recommendations:
+            rec_summary = st.session_state.recommendations[:500]
+            prompt += f"\n\nPREVIOUS RECOMMENDATIONS (summary):\n{rec_summary}"
+        if st.session_state.predictions:
+            pred_summary = st.session_state.predictions[:500]
+            prompt += f"\n\nPREVIOUS PREDICTIONS (summary):\n{pred_summary}"
+        
+        response = llm.invoke(prompt)
+        state["response"] = response.content
+        state["error"] = ""
+    except Exception as e:
+        state["error"] = f"Error in chatbot: {e}"
+        state["response"] = f"I encountered an error: {e}"
     
-    response = llm.invoke(prompt)
-    state["response"] = response.content
     return state
+
+def route_task(state: AgentState) -> Literal["ingest_data", "recommendations", "predictions", "chatbot"]:
+    """Route to appropriate node based on task"""
+    task = state.get("task", "")
+    if task == "ingest":
+        return "ingest_data"
+    elif task == "recommendations":
+        return "recommendations"
+    elif task == "predictions":
+        return "predictions"
+    else:
+        return "chatbot"
+
+def create_graph():
+    """Create the LangGraph workflow"""
+    workflow = StateGraph(AgentState)
+    
+    
+    workflow.add_node("ingest_data", ingest_data_node)
+    workflow.add_node("recommendations", recommendations_node)
+    workflow.add_node("predictions", predictions_node)
+    workflow.add_node("chatbot", chatbot_node)
+    
+    
+    workflow.add_conditional_edges(
+        START,
+        route_task,
+        {
+            "ingest_data": "ingest_data",
+            "recommendations": "recommendations",
+            "predictions": "predictions",
+            "chatbot": "chatbot"
+        }
+    )
+    
+    
+    workflow.add_edge("ingest_data", END)
+    workflow.add_edge("recommendations", END)
+    workflow.add_edge("predictions", END)
+    workflow.add_edge("chatbot", END)
+    
+    return workflow.compile()
 
 def main():
     st.title("🏥 Hospital Resource Management System")
-    st.caption("Advanced Decision Support with Quantitative Analysis")
+    st.caption("Advanced Decision Support with LangGraph & Quantitative Analysis")
+    
+    
+    if st.session_state.graph is None:
+        st.session_state.graph = create_graph()
     
     with st.sidebar:
         st.header("📊 Data Management")
         
-        if st.button("🔄 Load/Reload Data", use_container_width=True):
-            with st.spinner("Loading data and creating analytics database..."):
-                state = {
+        if st.button("🔄 Load Data", use_container_width=True):
+            with st.spinner("Loading data..."):
+                initial_state = {
                     "task": "ingest",
-                    "data_path": "dataset/",
-                    "vectorstore": None,
-                    "raw_data": {},
                     "recommendations": "",
                     "predictions": "",
                     "query": "",
                     "response": "",
-                    "history": []
+                    "error": ""
                 }
-                result = ingest_data_node(state)
-                st.session_state.vectorstore = result["vectorstore"]
-                st.session_state.raw_data = result["raw_data"]
-                st.session_state.data_loaded = True
+                
+                result = st.session_state.graph.invoke(initial_state)
+                
+                if result.get("error"):
+                    st.error(result["error"])
+                else:
+                    st.success("✅ Data loaded successfully!")
         
         st.divider()
         
@@ -557,15 +537,21 @@ def main():
             st.warning("⚠️ Please load data first using the sidebar button.")
         else:
             if st.button("🔍 Generate Strategic Analysis", key="rec_btn", use_container_width=True):
-                with st.spinner():
+                with st.spinner("Generating recommendations..."):
                     state = {
-                        "vectorstore": st.session_state.vectorstore,
-                        "raw_data": st.session_state.raw_data,
+                        "task": "recommendations",
                         "recommendations": "",
                         "predictions": "",
+                        "query": "",
+                        "response": "",
+                        "error": ""
                     }
-                    result = recommendations_node(state)
-                    st.session_state.recommendations = result["recommendations"]
+                    result = st.session_state.graph.invoke(state)
+                    
+                    if result.get("error"):
+                        st.error(result["error"])
+                    else:
+                        st.session_state.recommendations = result["recommendations"]
             
             if st.session_state.recommendations:
                 st.markdown("---")
@@ -578,15 +564,21 @@ def main():
             st.warning("⚠️ Please load data first using the sidebar button.")
         else:
             if st.button("📊 Generate Predictive Analysis", key="pred_btn", use_container_width=True):
-                with st.spinner("Analyzing patterns"):
+                with st.spinner("Analyzing patterns..."):
                     state = {
-                        "vectorstore": st.session_state.vectorstore,
-                        "raw_data": st.session_state.raw_data,
+                        "task": "predictions",
                         "recommendations": "",
                         "predictions": "",
+                        "query": "",
+                        "response": "",
+                        "error": ""
                     }
-                    result = predictions_node(state)
-                    st.session_state.predictions = result["predictions"]
+                    result = st.session_state.graph.invoke(state)
+                    
+                    if result.get("error"):
+                        st.error(result["error"])
+                    else:
+                        st.session_state.predictions = result["predictions"]
             
             if st.session_state.predictions:
                 st.markdown("---")
@@ -614,16 +606,21 @@ def main():
                 with st.chat_message("assistant"):
                     with st.spinner("Analyzing data and formulating decision framework..."):
                         state = {
-                            "vectorstore": st.session_state.vectorstore,
-                            "raw_data": st.session_state.raw_data,
-                            "recommendations": st.session_state.recommendations or "",
-                            "predictions": st.session_state.predictions or "",
+                            "task": "chat",
+                            "recommendations": "",
+                            "predictions": "",
                             "query": query,
-                            "response": ""
+                            "response": "",
+                            "error": ""
                         }
-                        result = chatbot_node(state)
-                        response = result["response"]
-                        st.markdown(response)
+                        result = st.session_state.graph.invoke(state)
+                        
+                        if result.get("error"):
+                            response = f"Error: {result['error']}"
+                            st.error(response)
+                        else:
+                            response = result["response"]
+                            st.markdown(response)
                 
                 st.session_state.chat_history.append({
                     "query": query,
